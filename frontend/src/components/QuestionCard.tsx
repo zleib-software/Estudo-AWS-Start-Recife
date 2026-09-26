@@ -1,6 +1,7 @@
 'use client';
 
 import type { Question } from '@/lib/types';
+import ExplanationBox from './ExplanationBox';
 
 interface QuestionCardProps {
   question: Question;
@@ -93,16 +94,18 @@ export default function QuestionCard({
       </div>
 
       {isPractice && hasAnswered && (
-        <div className="mt-8 p-5 bg-aws-light rounded-xl border border-gray-200 animate-fadeIn">
-          <h4 className="font-bold text-aws-navy mb-2 flex items-center gap-2">
-            <svg className="w-5 h-5 fill-aws-blue" viewBox="0 0 24 24">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
-            </svg>
-            Explicação
-          </h4>
-          <p className="text-sm text-gray-700 leading-relaxed">
-            {question.explanation || 'Nenhuma explicação disponível para esta questão.'}
-          </p>
+        <div className="mt-8 p-5 md:p-6 bg-slate-50/90 rounded-2xl border border-slate-200 shadow-xs animate-fadeIn">
+          <div className="flex items-center gap-2 mb-3 pb-2 border-b border-slate-200">
+            <span className="flex items-center justify-center w-6 h-6 rounded-full bg-aws-blue/10 text-aws-blue">
+              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+            </span>
+            <h4 className="font-bold text-aws-navy text-sm md:text-base">
+              Explicação Detalhada
+            </h4>
+          </div>
+          <ExplanationBox explanation={question.explanation} />
         </div>
       )}
     </div>

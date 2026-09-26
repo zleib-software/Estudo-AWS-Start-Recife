@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import type { Question } from '@/lib/types';
 import { DOMAIN_SHORT_NAMES } from '@/config/constants';
+import ExplanationBox from './ExplanationBox';
 
 interface ReviewListProps {
   questions: Question[];
@@ -114,11 +115,11 @@ export default function ReviewList({
               })}
             </div>
 
-            <div className="bg-aws-light p-4 rounded-lg">
-              <span className="block text-xs font-bold text-aws-navy uppercase mb-1">
-                Explicação
+            <div className="bg-slate-50/90 p-4 rounded-xl border border-slate-200">
+              <span className="block text-xs font-bold text-aws-navy uppercase tracking-wider mb-2">
+                Explicação Detalhada
               </span>
-              <p className="text-sm text-gray-700">{q.explanation}</p>
+              <ExplanationBox explanation={q.explanation} />
             </div>
           </div>
         ))}

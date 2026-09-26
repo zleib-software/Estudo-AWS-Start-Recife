@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface HeaderProps {
   quizInfo?: {
@@ -30,18 +31,14 @@ export default function Header({
               onClick={onHomeClick}
               className="flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer"
             >
-              <svg className="w-5 h-5 fill-aws-orange" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-              </svg>
+              <Image src="/icon.png" alt="Logo" width={28} height={28} className="w-7 h-7 rounded-full object-cover shadow" />
               <span className="font-bold text-sm md:text-base tracking-wide">
                 Simulado AWS
               </span>
             </button>
           ) : (
             <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-              <svg className="w-5 h-5 fill-aws-orange" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-              </svg>
+              <Image src="/icon.png" alt="Logo" width={28} height={28} className="w-7 h-7 rounded-full object-cover shadow" />
               <span className="font-bold text-sm md:text-base tracking-wide">
                 Simulado AWS
               </span>

@@ -23,6 +23,20 @@ app.use(
 // ─── Body parsing ───
 app.use(express.json({ limit: '10mb' }));
 
+// ─── Rota Raiz (Boas-vindas) ───
+app.get('/', (_req, res) => {
+  res.json({
+    success: true,
+    message: 'AWS Simulado API Online',
+    version: '1.0.0',
+    endpoints: {
+      health: '/health',
+      questions: '/api/questions',
+      domains: '/api/domains',
+    },
+  });
+});
+
 // ─── Health check ───
 app.get('/health', (_req, res) => {
   res.json({

@@ -1,50 +1,57 @@
-import sqlite3 from 'sqlite3';
-import { open } from 'sqlite';
-import path from 'path';
 import fs from 'fs';
-
+import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-let dbInstance = null;
+const DATA_FILE = path.resolve(__dirname, '../data/questions.json');
 
+let questionsCache = null;
+
+/**
+ * Carrega as questões do arquivo JSON para a memória.
+ */
 export async function connectDB() {
-  if (dbInstance) return dbInstance;
-  
-  // O arquivo de banco local ficará na raiz da pasta backend (2 níveis acima de src/config)
-  const defaultDbPath = path.resolve(__dirname, '../../database.sqlite');
-  const dbPath = process.env.SQLITE_DB_PATH || defaultDbPath;
-  
-  dbInstance = await open({
-    filename: dbPath,
-    driver: sqlite3.Database
-  });
+  if (questionsCache !== null) return questionsCache;
 
-  // Criar tabela se não existir
-  await dbInstance.exec(`
-    CREATE TABLE IF NOT EXISTS questions (
-      id INTEGER PRIMARY KEY AUTOINCREMENT,
-      domainId INTEGER NOT NULL,
-      question TEXT NOT NULL,
-      options TEXT NOT NULL,
-      answer INTEGER NOT NULL,
-      explanation TEXT DEFAULT '',
-      source TEXT DEFAULT 'MANUAL_ENTRY',
-      active INTEGER DEFAULT 1,
-      createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
-      updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP
-    )
-  `);
-  
-  console.log(`[SQLite] Conectado. Banco de dados em: ${dbPath}`);
-  return dbInstance;
+  if (!fs.existsSync(DATA_FILE)) {
+    console.warn(`[JSON DB] Arquivo ${DATA_FILE} não encontrado. Inicializando array vazio.`);
+    questionsCache = [];
+    fs.mkdirSync(path.dirname(DATA_FILE), { recursive: true });
+    fs.writeFileSync(DATA_FILE, JSON.stringify([], null, 2), 'utf-8');
+  } else {
+    const raw = fs.readFileSync(DATA_FILE, 'utf-8');
+    try {
+      questionsCache = JSON.parse(raw);
+    } catch (err) {
+      console.error('[JSON DB] Erro ao parsear questions.json:', err);
+      questionsCache = [];
+    }
+  }
+
+  console.log(`[JSON DB] Banco inicializado com sucesso (${questionsCache.length} questões carregadas).`);
+  return questionsCache;
 }
 
+/**
+ * Retorna as questões em memória.
+ */
 export function getDB() {
-  if (!dbInstance) {
+  if (questionsCache === null) {
     throw new Error('Banco de dados não foi inicializado. Chame connectDB primeiro.');
   }
-  return dbInstance;
+  return questionsCache;
+}
+
+/**
+ * Persiste as alterações no arquivo questions.json.
+ */
+export async function persistDB() {
+  if (questionsCache === null) return;
+  try {
+    await fs.promises.writeFile(DATA_FILE, JSON.stringify(questionsCache, null, 2), 'utf-8');
+  } catch (err) {
+    console.error('[JSON DB] Erro ao persistir questions.json:', err);
+  }
 }

@@ -1,75 +1,65 @@
-import { getDB } from '../config/db.js';
-
-/**
- * Converte a linha do banco SQLite para o formato esperado pelo frontend (o mesmo do MongoDB).
- */
-function mapQuestion(row) {
-  if (!row) return null;
-  return {
-    id: row.id.toString(),
-    domainId: row.domainId,
-    question: row.question,
-    options: JSON.parse(row.options),
-    answer: row.answer,
-    explanation: row.explanation,
-    source: row.source,
-    active: row.active === 1
-  };
-}
+import { getDB, persistDB } from '../config/db.js';
 
 export async function listQuestions({ domainId, count } = {}) {
   const db = getDB();
-  let query = 'SELECT * FROM questions WHERE active = 1';
-  const params = [];
+  let filtered = db.filter((q) => q.active !== false);
 
   if (domainId) {
-    query += ' AND domainId = ?';
-    params.push(domainId);
+    const dId = Number(domainId);
+    filtered = filtered.filter((q) => q.domainId === dId);
   }
 
   if (count) {
-    query += ' ORDER BY RANDOM() LIMIT ?';
-    params.push(count);
-  } else {
-    query += ' ORDER BY domainId ASC';
+    const num = Math.min(Number(count), filtered.length);
+    // Embaralhar aleatoriamente como no ORDER BY RANDOM()
+    const shuffled = [...filtered].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, num);
   }
 
-  const rows = await db.all(query, ...params);
-  return rows.map(mapQuestion);
+  return [...filtered].sort((a, b) => {
+    if (a.domainId !== b.domainId) return a.domainId - b.domainId;
+    return (Number(a.id) || 0) - (Number(b.id) || 0);
+  });
 }
 
 export async function getQuestionById(id) {
   const db = getDB();
-  const row = await db.get('SELECT * FROM questions WHERE id = ?', id);
-  return mapQuestion(row);
+  const found = db.find((q) => String(q.id) === String(id));
+  return found || null;
 }
 
 export async function createQuestion(data) {
   const db = getDB();
-  const result = await db.run(
-    `INSERT INTO questions (domainId, question, options, answer, explanation, source)
-     VALUES (?, ?, ?, ?, ?, ?)`,
-    [
-      data.domainId,
-      data.question,
-      JSON.stringify(data.options),
-      data.answer,
-      data.explanation || '',
-      data.source || 'MANUAL_ENTRY'
-    ]
-  );
-  
-  return getQuestionById(result.lastID);
+
+  // Calcular próximo ID numérico sequencial
+  const maxId = db.reduce((max, q) => Math.max(max, Number(q.id) || 0), 0);
+  const newQuestion = {
+    id: String(maxId + 1),
+    domainId: data.domainId,
+    question: data.question,
+    options: data.options,
+    answer: data.answer,
+    explanation: data.explanation || '',
+    source: data.source || 'MANUAL_ENTRY',
+    active: true,
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+  };
+
+  db.push(newQuestion);
+  await persistDB();
+
+  return newQuestion;
 }
 
 export async function updateQuestion(id, data) {
   const db = getDB();
-  const existingRow = await db.get('SELECT * FROM questions WHERE id = ?', id);
-  if (!existingRow) return null;
-  
-  const existing = mapQuestion(existingRow);
+  const index = db.findIndex((q) => String(q.id) === String(id));
+  if (index === -1) return null;
 
-  // Se answer veio sem options, validar contra as opções existentes (mesma lógica do Mongoose)
+  const existing = db[index];
+
+  // Se answer veio sem options, validar contra as opções existentes
   if (data.answer !== undefined && data.options === undefined) {
     if (data.answer < 0 || data.answer >= existing.options.length) {
       const err = new Error(
@@ -81,70 +71,63 @@ export async function updateQuestion(id, data) {
     }
   }
 
-  // Prepara o update mesclando os dados
-  const newDomainId = data.domainId !== undefined ? data.domainId : existing.domainId;
-  const newQuestion = data.question !== undefined ? data.question : existing.question;
-  const newOptions = data.options !== undefined ? JSON.stringify(data.options) : existingRow.options;
-  const newAnswer = data.answer !== undefined ? data.answer : existing.answer;
-  const newExplanation = data.explanation !== undefined ? data.explanation : existing.explanation;
-  const newSource = data.source !== undefined ? data.source : existing.source;
-  const newActive = data.active !== undefined ? (data.active ? 1 : 0) : existingRow.active;
+  const updated = {
+    ...existing,
+    domainId: data.domainId !== undefined ? data.domainId : existing.domainId,
+    question: data.question !== undefined ? data.question : existing.question,
+    options: data.options !== undefined ? data.options : existing.options,
+    answer: data.answer !== undefined ? data.answer : existing.answer,
+    explanation: data.explanation !== undefined ? data.explanation : existing.explanation,
+    source: data.source !== undefined ? data.source : existing.source,
+    active: data.active !== undefined ? Boolean(data.active) : existing.active,
+    updatedAt: new Date().toISOString(),
+  };
 
-  await db.run(
-    `UPDATE questions SET 
-      domainId = ?, 
-      question = ?, 
-      options = ?, 
-      answer = ?, 
-      explanation = ?, 
-      source = ?, 
-      active = ?,
-      updatedAt = CURRENT_TIMESTAMP
-     WHERE id = ?`,
-    [newDomainId, newQuestion, newOptions, newAnswer, newExplanation, newSource, newActive, id]
-  );
+  db[index] = updated;
+  await persistDB();
 
-  return getQuestionById(id);
+  return updated;
 }
 
 export async function deleteQuestion(id) {
   const db = getDB();
-  await db.run('UPDATE questions SET active = 0, updatedAt = CURRENT_TIMESTAMP WHERE id = ?', id);
-  return getQuestionById(id);
+  const index = db.findIndex((q) => String(q.id) === String(id));
+  if (index === -1) return null;
+
+  db[index] = {
+    ...db[index],
+    active: false,
+    updatedAt: new Date().toISOString(),
+  };
+
+  await persistDB();
+  return db[index];
 }
 
 export async function bulkInsertQuestions(questions) {
   const db = getDB();
-  const insertedIds = [];
-  
-  // Usar uma transação para inserir em lote
-  await db.run('BEGIN TRANSACTION');
-  try {
-    const stmt = await db.prepare(
-      `INSERT INTO questions (domainId, question, options, answer, explanation, source)
-       VALUES (?, ?, ?, ?, ?, ?)`
-    );
-    
-    for (const data of questions) {
-      const result = await stmt.run(
-        data.domainId,
-        data.question,
-        JSON.stringify(data.options),
-        data.answer,
-        data.explanation || '',
-        data.source || 'PDF_IMPORT'
-      );
-      insertedIds.push(result.lastID);
-    }
-    
-    await stmt.finalize();
-    await db.run('COMMIT');
-  } catch (err) {
-    await db.run('ROLLBACK');
-    throw err;
+  const inserted = [];
+
+  let currentMaxId = db.reduce((max, q) => Math.max(max, Number(q.id) || 0), 0);
+
+  for (const data of questions) {
+    currentMaxId++;
+    const q = {
+      id: String(currentMaxId),
+      domainId: data.domainId,
+      question: data.question,
+      options: data.options,
+      answer: data.answer,
+      explanation: data.explanation || '',
+      source: data.source || 'MANUAL_ENTRY',
+      active: true,
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    };
+    db.push(q);
+    inserted.push(q);
   }
 
-  const placeholders = insertedIds.map(() => '?').join(',');
-  const rows = await db.all(`SELECT * FROM questions WHERE id IN (${placeholders})`, insertedIds);
-  return rows.map(mapQuestion);
+  await persistDB();
+  return inserted;
 }

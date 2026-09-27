@@ -6,7 +6,7 @@ interface QuestionGridProps {
   isOpen: boolean;
   totalQuestions: number;
   currentIndex: number;
-  userAnswers: Record<number, number>;
+  userAnswers: Record<number, number | number[]>;
   flagged: Record<number, boolean>;
   onSelect: (index: number) => void;
   onClose: () => void;
@@ -30,9 +30,10 @@ export default function QuestionGrid({
   const questions = Array.from({ length: totalQuestions }, (_, i) => i);
 
   const filteredQuestions = questions.filter((index) => {
+    const isAnswered = userAnswers[index] !== undefined && (Array.isArray(userAnswers[index]) ? (userAnswers[index] as number[]).length > 0 : true);
     if (filter === 'all') return true;
-    if (filter === 'answered') return userAnswers[index] !== undefined;
-    if (filter === 'pending') return userAnswers[index] === undefined;
+    if (filter === 'answered') return isAnswered;
+    if (filter === 'pending') return !isAnswered;
     if (filter === 'flagged') return !!flagged[index];
     return true;
   });
@@ -67,7 +68,7 @@ export default function QuestionGrid({
       <div className="grid grid-cols-5 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12 gap-2">
         {filteredQuestions.map((index) => {
           const isCurrent = currentIndex === index;
-          const isAnswered = userAnswers[index] !== undefined;
+          const isAnswered = userAnswers[index] !== undefined && (Array.isArray(userAnswers[index]) ? (userAnswers[index] as number[]).length > 0 : true);
           const isFlagged = !!flagged[index];
 
           let btnClass = 'bg-white border-gray-200 text-gray-600 hover:border-aws-orange';

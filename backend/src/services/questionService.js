@@ -42,6 +42,8 @@ export async function createQuestion(data) {
     explanation: data.explanation || '',
     source: data.source || 'MANUAL_ENTRY',
     active: true,
+    ...(data.multiSelect !== undefined ? { multiSelect: data.multiSelect } : {}),
+    ...(data.requiredSelections !== undefined ? { requiredSelections: data.requiredSelections } : {}),
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
   };
@@ -61,13 +63,16 @@ export async function updateQuestion(id, data) {
 
   // Se answer veio sem options, validar contra as opções existentes
   if (data.answer !== undefined && data.options === undefined) {
-    if (data.answer < 0 || data.answer >= existing.options.length) {
-      const err = new Error(
-        `answer (${data.answer}) não é um índice válido de options (0-${existing.options.length - 1})`
-      );
-      err.statusCode = 400;
-      err.code = 'VALIDATION_ERROR';
-      throw err;
+    const answers = Array.isArray(data.answer) ? data.answer : [data.answer];
+    for (const ans of answers) {
+      if (ans < 0 || ans >= existing.options.length) {
+        const err = new Error(
+          `answer (${ans}) não é um índice válido de options (0-${existing.options.length - 1})`
+        );
+        err.statusCode = 400;
+        err.code = 'VALIDATION_ERROR';
+        throw err;
+      }
     }
   }
 
@@ -80,6 +85,8 @@ export async function updateQuestion(id, data) {
     explanation: data.explanation !== undefined ? data.explanation : existing.explanation,
     source: data.source !== undefined ? data.source : existing.source,
     active: data.active !== undefined ? Boolean(data.active) : existing.active,
+    ...(data.multiSelect !== undefined ? { multiSelect: data.multiSelect } : {}),
+    ...(data.requiredSelections !== undefined ? { requiredSelections: data.requiredSelections } : {}),
     updatedAt: new Date().toISOString(),
   };
 

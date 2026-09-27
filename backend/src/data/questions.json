@@ -12,7 +12,9 @@
     "answer": 1,
     "explanation": "O pilar Confiabilidade (Reliability) abrange a capacidade do sistema de mitigar e se recuperar de falhas, testar procedimentos de recuperação e dimensionar horizontalmente para aumentar a disponibilidade.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "2",
@@ -27,7 +29,9 @@
     "answer": 1,
     "explanation": "A nuvem permite substituir custos de capital iniciais em hardware físico e data centers (CapEx) por custos variáveis flexíveis e proporcionais ao uso real dos serviços (OpEx).",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "3",
@@ -42,7 +46,9 @@
     "answer": 1,
     "explanation": "A perspectiva de Pessoas (People) do AWS CAF orienta as organizações na evolução de sua cultura corporativa, estrutura de equipes e capacitação de talentos para a transformação digital.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "4",
@@ -57,7 +63,9 @@
     "answer": 1,
     "explanation": "Elasticidade é a capacidade de ajustar automaticamente a quantidade de recursos alocados conforme a demanda flutua, evitando custos desnecessários em momentos de baixo tráfego.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "5",
@@ -72,7 +80,9 @@
     "answer": 1,
     "explanation": "Os Pontos de Presença (Edge Locations) utilizam a rede CDN Amazon CloudFront para entregar dados, vídeos e APIs aos usuários com a menor latência possível.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "6",
@@ -87,7 +97,9 @@
     "answer": 1,
     "explanation": "Cada Zona de Disponibilidade (AZ) é composta por um ou mais data centers isolados contra falhas (energia, refrigeração e rede) dentro de uma Região geográfica.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "7",
@@ -102,7 +114,9 @@
     "answer": 0,
     "explanation": "Agilidade refere-se ao acesso imediato a novos recursos tecnológicos, reduzindo o tempo de inovação e lançamento de produtos.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "8",
@@ -117,7 +131,9 @@
     "answer": 1,
     "explanation": "A AWS é responsável pela segurança 'DA' nuvem (infraestrutura física, hardware, hipervisores). O cliente é responsável pela segurança 'NA' nuvem (dados, criptografia, IAM e regras de firewall).",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "9",
@@ -132,7 +148,9 @@
     "answer": 1,
     "explanation": "A Autenticação Multifator (MFA) adiciona uma camada essencial de segurança, exigindo um código temporário gerado por token ou dispositivo celular.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "10",
@@ -147,7 +165,9 @@
     "answer": 2,
     "explanation": "O Amazon GuardDuty monitora e identifica atividades maliciosas e não autorizadas na sua conta e cargas de trabalho na AWS.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "11",
@@ -162,7 +182,9 @@
     "answer": 1,
     "explanation": "O AWS Artifact é o portal gratuito de conformidade da AWS que oferece acesso a relatórios de auditoria e certificações internacionais.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "12",
@@ -177,7 +199,9 @@
     "answer": 1,
     "explanation": "Security Groups atuam na instância e são stateful (respostas ao tráfego permitido entram automaticamente). NACLs atuam na subrede e são stateless (regras de entrada e saída são avaliadas separadamente).",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "13",
@@ -192,7 +216,9 @@
     "answer": 1,
     "explanation": "O AWS WAF inspeciona requisições HTTP/HTTPS no nível da camada de aplicação (Camada 7) e bloqueia ataques como SQLi e XSS.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "14",
@@ -207,7 +233,9 @@
     "answer": 1,
     "explanation": "O AWS KMS é um serviço gerenciado que facilita a criação e o controle das chaves de criptografia criptográficas da sua organização.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "15",
@@ -222,7 +250,9 @@
     "answer": 1,
     "explanation": "O AWS Lambda é o serviço de computação Serverless (sem servidor) que executa seu código em resposta a eventos com cobrança por milissegundo de execução.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "16",
@@ -237,7 +267,9 @@
     "answer": 2,
     "explanation": "O S3 Glacier e S3 Glacier Deep Archive oferecem armazenamento de baixíssimo custo para arquivamento de dados e auditorias corporativas.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "17",
@@ -252,7 +284,9 @@
     "answer": 2,
     "explanation": "O Amazon DynamoDB é um banco de dados NoSQL totalmente gerenciado, escalável e de altíssimo desempenho para aplicações modernas.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "18",
@@ -267,7 +301,9 @@
     "answer": 2,
     "explanation": "O Amazon CloudFront distribui dados, vídeos, aplicações e APIs de forma segura para clientes globais com baixa latência usando a rede de Pontos de Presença.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "19",
@@ -282,7 +318,9 @@
     "answer": 2,
     "explanation": "O Amazon EFS é um sistema de arquivos para Linux que pode ser montado simultaneamente por centenas de instâncias EC2.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "20",
@@ -297,7 +335,9 @@
     "answer": 1,
     "explanation": "O AWS CloudTrail rastreia e registra o histórico de ações executadas por usuários, funções ou serviços na API da AWS.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "21",
@@ -312,7 +352,9 @@
     "answer": 2,
     "explanation": "Instâncias Spot aproveitam a capacidade ociosa de computação na AWS com grandes descontos, mas podem ser interrompidas com aviso prévio de 2 minutos.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "22",
@@ -327,7 +369,9 @@
     "answer": 1,
     "explanation": "O AWS Budgets permite configurar orçamentos personalizados e enviar alertas via e-mail ou SNS ao atingir limites de custos estipulados.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "23",
@@ -342,7 +386,9 @@
     "answer": 2,
     "explanation": "O AWS Business Support é recomendado para sistemas em produção, garantindo suporte técnico 24x7 com tempo de resposta de até 1 hora para sistemas caídos.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "24",
@@ -357,7 +403,9 @@
     "answer": 1,
     "explanation": "O Faturamento Consolidado combina o uso de todas as contas vinculadas em uma organização, permitindo atingir níveis de preços com mais desconto por escala.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "25",
@@ -372,7 +420,9 @@
     "answer": 1,
     "explanation": "A AWS Pricing Calculator é a calculadora oficial da AWS para estimar despesas mensais de serviços antes do provisionamento.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "id": "26",
@@ -387,7 +437,9 @@
     "answer": 0,
     "explanation": "O Nível Gratuito da AWS inclui: 1) Ofertas Sempre Gratuitas (ex: Lambda 1M requisições/mês), 2) 12 Meses Grátis para novas contas e 3) Testes Práticos por período limitado.",
     "source": "QUESTION_BANK_INITIAL",
-    "active": true
+    "active": true,
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -402,7 +454,9 @@
     "explanation": "O AWS Lambda é um serviço de computação serverless (sem servidor) totalmente gerenciado pela AWS. O usuário não gerencia nem provisiona servidores, sistemas operacionais ou infraestrutura subjacente — ele apenas fornece o código a ser executado.\n\n• **Acionamento por S3 e SNS**: O Lambda pode ser disparado diretamente por eventos do S3 (como upload de arquivos) e mensagens do SNS.\n• **Processamento sem servidor**: A AWS aloca recursos de computação automaticamente apenas no momento da execução, cobrando por tempo de execução em milissegundos.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "27"
+    "id": "27",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -417,7 +471,9 @@
     "explanation": "O plano AWS Basic Support está disponível para todos os clientes da AWS sem custo adicional e inclui acesso ao suporte ao cliente (faturamento e contas), whitepapers, documentações técnicas e aos fóruns da comunidade 24x7.\n\n• **Developer**: Adiciona suporte técnico por e-mail para casos não urgentes (dias úteis).\n• **Enterprise**: Inclui acesso a Gerente Técnico de Contas (TAM) e tempos de resposta inferiores a 15 minutos para sistemas de missão crítica.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "28"
+    "id": "28",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 2,
@@ -432,7 +488,9 @@
     "explanation": "IaaS (Infraestrutura como Serviço) é o modelo de computação em nuvem que fornece blocos de construção fundamentais de TI — como computadores virtuais (instâncias EC2), espaço de armazenamento (EBS/S3) e infraestrutura de rede (VPC), garantindo o mais alto nível de controle e flexibilidade de gerenciamento.\n\n• **PaaS (Plataforma como Serviço)**: Elimina a necessidade de gerenciar hardware e sistemas operacionais, focando na implantação e execução de código (ex: AWS Elastic Beanstalk).\n• **SaaS (Software como Serviço)**: Fornece um produto de software completo e gerenciado pelo provedor, acessível pela web.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "29"
+    "id": "29",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -447,7 +505,9 @@
     "explanation": "O AWS X-Ray ajuda desenvolvedores a analisar e depurar aplicações distribuídas e em arquitetura de microsserviços. Ele rastreia requisições ponta a ponta à medida que transitam pela aplicação, mapeando dependências, gargalos e exceções.\n\n• **Amazon CloudWatch**: Coleta métricas operacionais, gera logs e dispara alarmes baseados em limites pré-definidos.\n• **Amazon OpenSearch / CloudSearch**: Serviços gerenciados de indexação e mecanismo de busca de texto em aplicações.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "30"
+    "id": "30",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -462,7 +522,9 @@
     "explanation": "O AWS Marketplace é um catálogo digital com milhares de listagens de softwares de fornecedores independentes (ISVs). Os clientes podem encontrar, testar, comprar e implantar soluções rapidamente em suas contas AWS com cobrança unificada.\n\n• **AWS OpsWorks**: Serviço de gerenciamento de configuração que utiliza instâncias de automação Puppet e Chef.\n• **Amazon AMI**: Modelo com configuração pré-definida de sistema operacional e softwares para inicializar instâncias EC2.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "31"
+    "id": "31",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -477,7 +539,9 @@
     "explanation": "O AWS Compute Optimizer utiliza algoritmos de Machine Learning (aprendizado de máquina) para analisar o histórico de métricas de utilização de instâncias EC2, volumes EBS, funções Lambda e contêineres ECS, recomendando as configurações ideais de tamanho e tipo para reduzir custos e maximizar desempenho.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "32"
+    "id": "32",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -492,7 +556,9 @@
     "explanation": "O Amazon Comprehend é um serviço de Processamento de Linguagem Natural (NLP) baseado em Machine Learning que analisa textos e identifica sentimentos (positivo, negativo, neutro ou misto), idioma, entidades, palavras-chave e tópicos.\n\n• **Amazon Translate**: Serviço de tradução automática neural de alta qualidade entre diferentes idiomas.\n• **Amazon Polly**: Converte texto escrito em fala realista com sintetização de voz natural.\n• **Amazon Kendra**: Serviço corporativo de busca inteligente baseado em aprendizado de máquina.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "33"
+    "id": "33",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -507,21 +573,26 @@
     "explanation": "Para uma estratégia robusta de Recuperação de Desastres (Disaster Recovery - DR), a melhor prática para o Amazon RDS é configurar a replicação entre diferentes regiões geográficas (Cross-Region Read Replicas ou Multi-Region). Se uma região inteira sofrer uma interrupção, uma réplica em outra região pode ser promovida a banco principal.\n\n• **Multi-AZ**: Focado em Alta Disponibilidade (HA) e failover automático síncrono dentro da mesma região, não sendo uma proteção completa contra desastres em nível regional.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "34"
+    "id": "34",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 2,
-    "question": "Qual dos seguintes serviços de bancos de dados oferecidos pela AWS proporciona, por padrão, gerenciamento completo, incluindo automação de tarefas como backup, aplicação de patches, monitoramento e escalabilidade, minimizando a intervenção administrativa do usuário?",
+    "question": "Qual dos seguintes serviços de bancos de dados da AWS proporciona, por padrão, gerenciamento completo, incluindo automação de tarefas como backup, aplicação de patches, monitoramento e escalabilidade automática sem servidor?",
     "options": [
-      "DynamoDB",
-      "SQL Server",
-      "MySQL"
+      "Amazon DynamoDB",
+      "Amazon RDS for SQL Server",
+      "Amazon RDS for MySQL",
+      "Amazon EC2 com banco de dados autogerenciado"
     ],
     "answer": 0,
     "explanation": "O Amazon DynamoDB é um banco de dados NoSQL de chave-valor e documentos totalmente gerenciado e serverless. A AWS cuida automaticamente de backups contínuos, replicação em múltiplas AZs, aplicação de patches e escalabilidade automática de taxa de transferência (throughput), eliminando qualquer esforço de manutenção de infraestrutura.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "35"
+    "id": "35",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -536,22 +607,27 @@
     "explanation": "O Amazon EBS (Elastic Block Store) fornece volumes de armazenamento em nível de bloco de alta performance projetados para uso com instâncias do Amazon EC2. Os volumes EBS persistem independentemente da vida útil da instância e podem ser facilmente desacoplados de uma instância e acoplados a outra na mesma Zona de Disponibilidade.\n\n• **Amazon S3**: Armazenamento de objetos baseado em web (não é sistema de arquivos ou bloco para SO).\n• **AWS CodeCommit**: Serviço de controle de versão privado hospedado pela AWS baseado em repositórios Git.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "36"
+    "id": "36",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
-    "question": "Uma startup SaaS que utiliza diversos serviços da AWS está crescendo rapidamente e enfrenta desafios técnicos e operacionais. A gerente de engenharia precisa avaliar os planos de suporte disponíveis. Quais são os cinco tipos de suporte ofertados pela AWS?",
+    "question": "Uma startup SaaS precisa avaliar os planos de suporte oficiais disponíveis na AWS. Quais são os cinco planos de suporte oferecidos pela AWS?",
     "options": [
-      "Basic, Developer, Business, Advanced, Enterprise On-Ramp",
-      "Basic, Developer, Business, Enterprise On-Ramp, Enterprise",
-      "Standard, Developer, Business, Enterprise, Enterprise On-Ramp",
-      "Bronze, Silver, Gold, Diamond, Ruby"
+      "Basic, Developer, Business, Enterprise On-Ramp e Enterprise",
+      "Basic, Developer, Business, Advanced e Enterprise",
+      "Standard, Developer, Business, Enterprise e Premium",
+      "Bronze, Silver, Gold, Platinum e Diamond",
+      "Free, Startup, Growth, Corporate e Enterprise"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "A AWS oferece cinco planos oficiais de suporte para atender diferentes perfis e portes de clientes:\n\n• **Basic**: Gratuito, inclui atendimento ao cliente e documentação 24x7.\n• **Developer**: Recomendado para ambientes de desenvolvimento e experimentação com suporte técnico por e-mail em horário comercial.\n• **Business**: Recomendado para cargas de produção, com suporte técnico 24x7 por telefone, chat e e-mail com resposta em 1 hora para falhas de produção.\n• **Enterprise On-Ramp**: Suporte técnico 24x7 com resposta em 30 minutos para sistemas críticos e acesso a consultor técnico.\n• **Enterprise**: Atendimento completo para sistemas de missão crítica, com tempo de resposta inferior a 15 minutos e Gerente Técnico de Contas (TAM) dedicado.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "37"
+    "id": "37",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -566,23 +642,30 @@
     "explanation": "O Amazon CloudSearch é um serviço SaaS gerenciado que facilita a configuração, o gerenciamento e a escalabilidade de soluções de pesquisa personalizadas para sites ou aplicações, permitindo pesquisas rápidas em documentos e catálogos com recursos de preenchimento automático e filtros.\n\n• **Amazon Athena**: Serviço de análise interativa serverless para consultar dados diretamente no Amazon S3 utilizando SQL padrão.\n• **Amazon OpenSearch**: Mecanismo de busca e análise de dados em larga escala para logs e análises textuais complexas.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "38"
+    "id": "38",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
-    "question": "Quais dos seguintes itens fazem parte dos pilares do Well-Architected Framework?",
+    "question": "Quais dos seguintes itens fazem parte dos 6 pilares oficiais do AWS Well-Architected Framework? (Selecione 2 alternativas)",
     "options": [
-      "Sua seleção está Segurança",
+      "Segurança",
       "Excelência Operacional",
-      "Monitoramento",
-      "Desacoplamento",
-      "Escalabilidade"
+      "Monitoramento Contínuo",
+      "Desacoplamento de Aplicações",
+      "Escalabilidade Automática de Rede"
     ],
-    "answer": 0,
-    "explanation": "Os 6 pilares oficiais do AWS Well-Architected Framework são:\n1) Excelência Operacional (Operational Excellence)\n2) Segurança (Security)\n3) Confiabilidade (Reliability)\n4) Eficiência de Desempenho (Performance Efficiency)\n5) Otimização de Custos (Cost Optimization)\n6) Sustentabilidade (Sustainability)\n\n• Segurança e Excelência Operacional fazem parte dos pilares oficiais. Monitoramento, Desacoplamento e Escalabilidade são práticas ou princípios técnicos, e não nomes de pilares.",
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Segurança e Excelência Operacional são pilares oficiais do AWS Well-Architected Framework (junto com Confiabilidade, Eficiência de Desempenho, Otimização de Custos e Sustentabilidade).\n\n• **Monitoramento Contínuo**: Prática essencial, mas não é um pilar oficial.\n• **Desacoplamento**: Princípio de design arquitetural, não um pilar.\n• **Escalabilidade Automática**: Recurso técnico da infraestrutura.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "39"
+    "id": "39",
+    "multiSelect": true,
+    "requiredSelections": 2
   },
   {
     "domainId": 3,
@@ -597,7 +680,9 @@
     "explanation": "O Amazon API Gateway é um serviço totalmente gerenciado que permite a desenvolvedores criar, publicar, manter, monitorar e proteger APIs REST e WebSocket em qualquer escala. Ele inclui suporte nativo a controle de múltiplas versões (stages/deployments) e controle de tráfego, garantindo compatibilidade com sistemas legados e consumidores externos.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "40"
+    "id": "40",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -612,7 +697,9 @@
     "explanation": "Para permitir que uma função AWS Lambda acesse outro serviço como o Amazon DynamoDB, é necessário atribuir uma IAM Role (Função de Execução) à função Lambda contendo uma política (policy) que conceda permissões de leitura/escrita no DynamoDB.\n\n• **AWS Cognito**: Gerenciamento de identidade, autenticação e federação para usuários finais de aplicativos.\n• **AWS Config**: Avaliação de conformidade e auditoria de configurações de recursos.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "41"
+    "id": "41",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -627,7 +714,9 @@
     "explanation": "O AWS CloudTrail grava e monitora continuamente o histórico de eventos e chamadas de API feitas em sua conta da AWS (seja pelo Console, SDK ou CLI). Ele informa com precisão quem realizou uma ação, em qual recurso, a partir de qual endereço IP e quando ela ocorreu (como a exclusão ou desligamento de um recurso).",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "42"
+    "id": "42",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -642,7 +731,9 @@
     "explanation": "O AWS Wavelength incorpora os serviços de computação e armazenamento da AWS na borda das redes 5G de provedores de telecomunicações, permitindo que desenvolvedores entreguem aplicações para dispositivos móveis com latências de poucos milissegundos.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "43"
+    "id": "43",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -657,7 +748,9 @@
     "explanation": "O Amazon S3 é a solução ideal e mais econômica para hospedar sites estáticos (HTML, CSS, JavaScript, imagens). Ele elimina a necessidade de gerenciar ou pagar por instâncias de servidores (como EC2), oferece alta disponibilidade e escalabilidade ilimitada a um custo extremamente baixo.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "44"
+    "id": "44",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -672,7 +765,9 @@
     "explanation": "O AWS Free Tier (Nível Gratuito) é composto por três modalidades distintas de ofertas:\n\n• **12 Meses Grátis**: Disponível para novas contas durante os primeiros 12 meses após o cadastro (ex: 750 horas de instâncias EC2 t2.micro/t3.micro e 5 GB no S3).\n• **Sempre Gratuito**: Ofertas que não expiram após 12 meses e estão disponíveis para todos os clientes (ex: 1 milhão de requisições no Lambda por mês).\n• **Testes (Trials)**: Períodos curtos de avaliação gratuita a partir do momento em que um serviço específico é ativado pela primeira vez.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "45"
+    "id": "45",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -687,7 +782,9 @@
     "explanation": "O Amazon Neptune é um serviço de banco de dados de grafos totalmente gerenciado, rápido e confiável, construído para armazenar e navegar em relacionamentos altamente conectados (como em redes sociais, detecção de fraudes, mecanismos de recomendação e grafos de conhecimento).",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "46"
+    "id": "46",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 4,
@@ -702,22 +799,30 @@
     "explanation": "O Amazon DynamoDB é a escolha recomendada para armazenar catálogos de produtos com atributos variáveis e esquemas flexíveis (documentos JSON e chave-valor), entregando desempenho consistente de milissegundos de um dígito em qualquer escala sem necessidade de modelar esquemas rígidos relacionais.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "47"
+    "id": "47",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
-    "question": "Quais são os dois componentes principais do Amazon S3 utilizados para organizar e armazenar dados?",
+    "question": "Quais são os dois componentes principais do Amazon S3 utilizados para organizar e armazenar dados na nuvem? (Selecione 2 alternativas)",
     "options": [
       "Buckets",
       "Objetos",
-      "Funções (IAM Roles)",
-      "Funções Lambda"
+      "IAM Roles",
+      "Funções Lambda",
+      "Tabelas de Rotas"
     ],
-    "answer": 0,
-    "explanation": "Os dois componentes fundamentais da arquitetura do Amazon S3 são:\n\n• **Buckets**: Contêineres de nível superior utilizados para organizar e armazenar os dados no S3.\n• **Objetos**: Os arquivos em si, compostos pelo dado bruto, seus metadados associados e uma chave identificadora única (chave do objeto).",
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "No Amazon S3, os dois componentes fundamentais são:\n\n• **Buckets**: Contêineres de nível superior que armazenam os dados.\n• **Objetos**: Os arquivos em si, compostos por dados, metadados e chave identificadora.\n\n• **IAM Roles**: Gerenciamento de credenciais e permissões.\n• **Funções Lambda**: Computação serverless.\n• **Tabelas de Rotas**: Roteamento de rede dentro de uma VPC.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "48"
+    "id": "48",
+    "multiSelect": true,
+    "requiredSelections": 2
   },
   {
     "domainId": 3,
@@ -732,7 +837,9 @@
     "explanation": "O Amazon EFS (Elastic File System) é um sistema de arquivos elástico baseado em rede (protocolo NFSv4) totalmente gerenciado, que pode ser montado e compartilhado simultaneamente por centenas de instâncias EC2 e funções Lambda, expandindo e reduzindo sua capacidade automaticamente.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "49"
+    "id": "49",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -747,21 +854,26 @@
     "explanation": "Um Elastic IP (IP Elástico) é um endereço IPv4 público estático associado à sua conta AWS. Ele permite mascarar a falha de uma instância ou software ao remapear rapidamente o endereço para outra instância substituta na mesma região, mantendo o mesmo IP exposto aos clientes.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "50"
+    "id": "50",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
     "question": "Um time de desenvolvimento detectou baixo desempenho em um banco de dados relacional. A concorrência entre um alto volume de consultas e outras operações no banco de dados tem elevado a latência no tráfego de dados. Qual é a abordagem mais eficiente e econômica para solucionar esse problema?",
     "options": [
-      "Utilizar Read Replicas",
-      "Substituir o RDS pelo Dynamo",
-      "Atualizar a role de acesso ao banco de dados"
+      "Utilizar Read Replicas (Réplicas de Leitura do RDS)",
+      "Substituir o RDS pelo DynamoDB",
+      "Atualizar a role de acesso IAM ao banco de dados",
+      "Aumentar a capacidade de armazenamento de um bucket S3"
     ],
     "answer": 0,
     "explanation": "As Read Replicas (Réplicas de Leitura) do Amazon RDS permitem desviar o tráfego pesado de consultas (operações de leitura SELECT) para instâncias secundárias dedicadas, aliviando a carga sobre a instância primária de banco de dados e solucionando problemas de concorrência com excelente custo-benefício.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "51"
+    "id": "51",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -776,7 +888,9 @@
     "explanation": "O Amazon CloudWatch é o serviço de monitoramento e observabilidade da AWS responsável por coletar métricas operacionais (como utilização de CPU, consumo de memória, tráfego de rede e E/S de disco) e gerar gráficos e alarmes em tempo real.\n\n• **AWS CloudTrail**: Registra chamadas de API e auditoria de ações (quem fez o quê).\n• **AWS Cost Explorer**: Ferramenta financeira para visualizar e analisar os custos e gastos da conta.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "52"
+    "id": "52",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 4,
@@ -791,7 +905,9 @@
     "explanation": "O Amazon S3 Glacier (e Glacier Deep Archive) é a classe de armazenamento de menor custo do Amazon S3, projetada especificamente para arquivamento de dados de longo prazo acessados raramente e mantidos para retenção de conformidade e auditoria.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "53"
+    "id": "53",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -806,7 +922,9 @@
     "explanation": "O AWS IQ é uma plataforma que conecta clientes da AWS a especialistas independentes e parceiros certificados pela AWS para consultoria, planejamento e entrega de projetos rápidos sob demanda, com pagamento gerenciado diretamente pela conta da AWS.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "54"
+    "id": "54",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -821,7 +939,9 @@
     "explanation": "O Amazon EBS (Elastic Block Store) é o serviço de armazenamento em bloco de alta performance projetado para ser montado em instâncias EC2 como discos rígidos virtuais, suportando sistemas de arquivos operacionais e bancos de dados transacionais.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "55"
+    "id": "55",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 2,
@@ -836,7 +956,9 @@
     "explanation": "O AWS License Manager facilita o gerenciamento, rastreamento e auditoria de licenças de software existentes (como Microsoft Windows Server, SQL Server e Oracle) em ambientes AWS e locais, garantindo conformidade com regras contratuais que exigem vinculação a nós ou núcleos físicos (como em Dedicated Hosts).",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "56"
+    "id": "56",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -851,7 +973,9 @@
     "explanation": "O Amazon OpenSearch Service (sucessor do Amazon Elasticsearch Service) é o serviço gerenciado ideal para ingestão, armazenamento, pesquisa e análise de grandes volumes de logs de aplicações e métricas em tempo real, integrando-se nativamente com painéis do OpenSearch Dashboards.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "57"
+    "id": "57",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -866,7 +990,9 @@
     "explanation": "O EC2 Auto Scaling permite automatizar o provisionamento e o encerramento de instâncias EC2 de acordo com a demanda real (como picos de tráfego em campanhas de vendas), garantindo disponibilidade contínua sem custos extras de capacidade ociosa.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "58"
+    "id": "58",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -881,22 +1007,31 @@
     "explanation": "O AWS Batch é o serviço projetado para planejar, agendar e executar dezenas de milhares de tarefas de processamento em lote (batch computing) de forma eficiente, provisionando automaticamente instâncias EC2 ou contêineres Fargate necessários.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "59"
+    "id": "59",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
-    "question": "AWS Trusted Advisor é um serviço de monitoramento e recomendação que auxilia o cliente a utilizar os recursos de sua conta de maneira alinhada com as melhores práticas para trazer muitos benefícios. Quais itens abaixo representam tais benefícios?",
+    "question": "O AWS Trusted Advisor é um serviço que inspeciona seu ambiente para seguir as melhores práticas da AWS. Quais dos itens abaixo representam categorias oficiais avaliadas pelo Trusted Advisor? (Selecione 3 alternativas)",
     "options": [
-      "Performance",
-      "Segurança",
       "Otimização de Custos",
-      "Proteção de Hardware"
+      "Segurança",
+      "Desempenho (Performance)",
+      "Proteção Física de Hardware",
+      "Manutenção Elétrica de Servidores"
     ],
-    "answer": 0,
-    "explanation": "O AWS Trusted Advisor inspeciona seu ambiente AWS e fornece recomendações em tempo real organizadas em 5 categorias essenciais:\n1) Otimização de Custos\n2) Segurança\n3) Tolerância a Falhas\n4) Desempenho\n5) Limites de Serviço\n\n(A segurança física do hardware é de responsabilidade exclusiva da AWS).",
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "O AWS Trusted Advisor fornece recomendações em 5 categorias essenciais: Otimização de Custos, Segurança, Desempenho, Tolerância a Falhas e Limites de Serviço.\n\n• **Proteção Física e Manutenção Elétrica**: São de responsabilidade exclusiva da AWS segundo o Modelo de Responsabilidade Compartilhada.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "60"
+    "id": "60",
+    "multiSelect": true,
+    "requiredSelections": 3
   },
   {
     "domainId": 3,
@@ -911,7 +1046,9 @@
     "explanation": "O Amazon Athena é um serviço interativo de consultas serverless que permite analisar dados armazenados diretamente no Amazon S3 utilizando sintaxe SQL padrão, sem necessidade de provisionar servidores ou bancos de dados.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "61"
+    "id": "61",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -926,7 +1063,9 @@
     "explanation": "O AWS Glue é um serviço gerenciado de ETL (Extrair, Transformar e Carregar) que permite descobrir, catalogar, limpar e converter dados de diferentes fontes e formatos incompatíveis em esquemas padronizados para análise.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "62"
+    "id": "62",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 4,
@@ -941,7 +1080,9 @@
     "explanation": "O Amazon S3 Standard é projetado para dados frequentemente acessados e possui o maior custo de armazenamento por gigabyte entre as classes do S3, pois não cobra taxas de recuperação de dados e entrega baixa latência e alta taxa de transferência.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "63"
+    "id": "63",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -956,7 +1097,9 @@
     "explanation": "O AWS Step Functions é um orquestrador visual de fluxos de trabalho serverless baseado em máquinas de estado. Ele permite encadear e coordenar múltiplos serviços da AWS (como funções Lambda, filas SQS e tópicos SNS) com tratamento de erros, lógica condicional e repetições automáticas.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "64"
+    "id": "64",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 2,
@@ -971,7 +1114,9 @@
     "explanation": "O AWS Certificate Manager (ACM) permite provisionar, gerenciar e renovar automaticamente certificados digitais SSL/TLS públicos e privados de forma simplificada, integrando-se diretamente com Elastic Load Balancing, CloudFront e API Gateway para garantir tráfego criptografado (HTTPS).",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "65"
+    "id": "65",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -986,7 +1131,9 @@
     "explanation": "O AWS Storage Gateway é um serviço de armazenamento híbrido que conecta ambientes on-premises ao armazenamento em nuvem da AWS (S3 e EBS), permitindo que aplicações locais utilizem a nuvem para backup, recuperação de desastres e armazenamento em camadas.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "66"
+    "id": "66",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1001,7 +1148,9 @@
     "explanation": "O Amazon QuickSight é um serviço de Business Intelligence (BI) e visualização de dados em nuvem, totalmente gerenciado e serverless, que permite criar dashboards interativos e obter insights com suporte a recursos de Machine Learning e consultas em linguagem natural.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "67"
+    "id": "67",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1016,7 +1165,9 @@
     "explanation": "Uma IAM Role (Função IAM) é uma identidade que concede permissões temporárias para que serviços da AWS, instâncias EC2 ou aplicações executem ações seguras em outros recursos da conta, sem necessidade de armazenar credenciais ou chaves de acesso estáticas no código.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "68"
+    "id": "68",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1031,7 +1182,9 @@
     "explanation": "O volume total de dados que pode ser armazenado no Amazon S3 é virtualmente ilimitado. Não há limite para a quantidade de objetos que você pode armazenar em um bucket. O único limite técnico é que cada objeto individual pode ter no máximo 5 Terabytes (TB) de tamanho.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "69"
+    "id": "69",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1046,7 +1199,9 @@
     "explanation": "O AWS CloudFormation é o serviço de Infraestrutura como Código (IaC) da AWS. Ele permite modelar, provisionar e gerenciar toda a sua infraestrutura e recursos da AWS de maneira automatizada e padronizada utilizando arquivos de modelo em formato JSON ou YAML.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "70"
+    "id": "70",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1062,7 +1217,9 @@
     "explanation": "O pilar Confiabilidade (Reliability) do AWS Well-Architected Framework tem como princípio fundamental projetar sistemas com recuperação automática contra falhas (por exemplo, utilizando Auto Scaling, Health Checks e failover Multi-AZ) para restaurar a disponibilidade sem intervenção manual.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "71"
+    "id": "71",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 4,
@@ -1077,20 +1234,26 @@
     "explanation": "O AWS Well-Architected Tool e seu framework fornecem as diretrizes e boas práticas organizadas nos 6 pilares de arquitetura para avaliar e otimizar cargas de trabalho na nuvem com segurança, desempenho, resiliência e eficiência de custos.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "72"
+    "id": "72",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
     "question": "Uma empresa de e-commerce enfrenta picos de tráfego durante promoções e precisa ajustar sua infraestrutura para garantir alta disponibilidade e bom desempenho, mesmo em momentos de alta demanda. Qual princípio de design de arquitetura é mais adequado para atender a essa necessidade?",
     "options": [
-      "Implementar automação para provisionar e desprovisionar recursos conforme necess",
-      "Projetar para falhas e implementar recuperação automática"
+      "Implementar automação para provisionar e desprovisionar recursos conforme necessário (escalabilidade automática)",
+      "Projetar para falhas e desativar balanceadores de carga",
+      "Provisionar permanentemente a capacidade máxima esperada para o ano todo",
+      "Migrar todos os servidores para uma única Zona de Disponibilidade física"
     ],
     "answer": 0,
     "explanation": "Para gerenciar picos de tráfego de maneira eficiente e econômica, o pilar de Eficiência de Desempenho e Confiabilidade recomenda implementar automação de provisionamento e desprovisionamento (como EC2 Auto Scaling), garantindo que os recursos se adaptem à demanda em tempo real.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "73"
+    "id": "73",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1105,7 +1268,9 @@
     "explanation": "O Amazon DynamoDB NÃO cobra por MB em solicitações de leitura e gravação. A precificação do DynamoDB baseia-se em Unidades de Capacidade de Leitura/Gravação (RCU/WCU) no modo provisionado, ou no número exato de requisições de leitura/escrita no modo sob demanda, além do armazenamento de dados em GB por mês.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "74"
+    "id": "74",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1120,7 +1285,9 @@
     "explanation": "O Amazon SNS (Simple Notification Service) é um serviço de publicação e assinatura (pub/sub) totalmente gerenciado, ideal para disseminar notificações e mensagens assíncronas de um produtor para múltiplos assinantes ou microsserviços simultaneamente.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "75"
+    "id": "75",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 4,
@@ -1135,7 +1302,9 @@
     "explanation": "O Amazon Lightsail é a maneira mais simples e de menor custo para iniciar aplicações na nuvem, oferecendo pacotes prontos com máquina virtual, armazenamento em SSD, transferência de dados e DNS pré-configurados por um preço fixo mensal previsível, ideal para sites WordPress e pequenos projetos.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "76"
+    "id": "76",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1150,7 +1319,9 @@
     "explanation": "Ao calcular o Total Cost of Ownership (TCO) ao migrar para a AWS, consideram-se os custos diretos e indiretos de manter infraestrutura própria: aquisição de hardware de servidores e storage, espaço físico em data center, consumo de energia elétrica, refrigeração, taxas de licenciamento de software e custos de equipe técnica de manutenção.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "77"
+    "id": "77",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1165,7 +1336,9 @@
     "explanation": "A prática mais segura para conceder permissões a aplicações hospedadas no Amazon EC2 para acessar o Amazon S3 é associar uma IAM Role à instância EC2 (via Instance Profile). Isso elimina o armazenamento de chaves de acesso estáticas na máquina e utiliza credenciais temporárias renovadas automaticamente.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "78"
+    "id": "78",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1181,7 +1354,9 @@
     "explanation": "Os nomes de buckets no Amazon S3 devem ser exclusivos globalmente entre todas as contas AWS, conter entre 3 e 63 caracteres, ser compostos apenas por letras minúsculas, números, pontos e hífens, e não podem ser formatados como endereços IP.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "79"
+    "id": "79",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1196,7 +1371,9 @@
     "explanation": "O AWS Control Tower fornece a maneira mais rápida e fácil de configurar e controlar um ambiente AWS multas-contas seguro e bem arquitetado, aplicando regras de governança (guardrails) e automações centralizadas baseadas em melhores práticas.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "80"
+    "id": "80",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1211,23 +1388,30 @@
     "explanation": "O AWS Global Accelerator é um serviço de rede que otimiza o caminho do tráfego dos usuários até suas aplicações utilizando a rede global privada da AWS e endereços Anycast IP estáticos, reduzindo latência, jitter e perda de pacotes para tráfego TCP/UDP.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "81"
+    "id": "81",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
-    "question": "Quais são as possíveis utilizações do AWS CLI (Command Line Interface) após o correto download, instalação e configuração deste serviço em seu computador?",
+    "question": "Quais são possíveis utilizações da AWS CLI (Command Line Interface) na administração de recursos na nuvem? (Selecione 2 alternativas)",
     "options": [
-      "Controlar múltiplos serviços da AWS",
-      "Visualização de Dashboards Personalizados",
-      "Automatizar serviços da AWS",
-      "Console do AWS Management",
-      "Visualizar gráficos de Custo de serviços da AWS"
+      "Controlar e gerenciar múltiplos serviços da AWS via comandos no terminal",
+      "Automatizar tarefas e provisionamentos por meio de scripts de automação",
+      "Acessar fisicamente servidores nos data centers da AWS",
+      "Substituir a necessidade de chaves de acesso e permissões IAM",
+      "Configurar diretamente o hardware das placas-mãe nos data centers"
     ],
-    "answer": 0,
-    "explanation": "A AWS CLI (Interface de Linha de Comando) permite que administradores e engenheiros controlem e automatizem múltiplos serviços da AWS a partir do terminal ou scripts, acelerando rotinas operacionais sem necessidade de navegação manual pelo console web.",
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "A AWS CLI permite gerenciar recursos via linha de comando e integrar automações com scripts (Bash, PowerShell, Python), economizando tempo em tarefas repetitivas.\n\n• **Acesso Físico e Hardware**: Clientes nunca têm acesso aos data centers físicos da AWS.\n• **Permissões IAM**: O CLI ainda exige credenciais válidas configuradas no perfil do IAM.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "82"
+    "id": "82",
+    "multiSelect": true,
+    "requiredSelections": 2
   },
   {
     "domainId": 3,
@@ -1242,7 +1426,9 @@
     "explanation": "Os 6 pilares do AWS Well-Architected Framework são:\n1) Excelência Operacional\n2) Segurança\n3) Confiabilidade\n4) Eficiência de Desempenho (Performance Efficiency)\n5) Otimização de Custos\n6) Sustentabilidade",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "83"
+    "id": "83",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 4,
@@ -1257,7 +1443,9 @@
     "explanation": "O Amazon S3 oferece descontos por volume: à medida que a quantidade total de dados armazenados atinge níveis mais altos (em Terabytes e Petabytes), o custo por gigabyte armazenado diminui progressivamente.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "84"
+    "id": "84",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 2,
@@ -1272,7 +1460,9 @@
     "explanation": "O Amazon S3 é a solução recomendada para armazenar e organizar grandes volumes de contratos e documentos estáticos (como PDFs e digitalizações), oferecendo durabilidade de 99,999999999% (11 noves), criptografia nativa e gerenciamento de ciclo de vida.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "85"
+    "id": "85",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1287,7 +1477,9 @@
     "explanation": "O AWS CloudFormation permite que todos os departamentos definam seus ambientes através de modelos de código padronizados e reutilizáveis (Templates), garantindo que novos recursos e stacks sejam implantados de forma idêntica e consistente.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "86"
+    "id": "86",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1302,7 +1494,9 @@
     "explanation": "Instâncias EC2 frequentemente utilizam volumes de armazenamento de instâncias (Instance Store) que são efêmeros (os dados são perdidos se a máquina for interrompida). O Amazon EBS é necessário para fornecer armazenamento persistente em bloco que retém os dados e sistemas operacionais mesmo com a parada da instância.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "87"
+    "id": "87",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 4,
@@ -1317,23 +1511,31 @@
     "explanation": "O Amazon CloudWatch atua em conjunto com o AWS Budgets, coletando dados de uso e métricas para monitorar os limites de gastos e disparar notificações automáticas quando os custos previstos ou reais ultrapassam os limites orçados.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "88"
+    "id": "88",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
-    "question": "Quais são as principais funções do AWS Glue?",
+    "question": "Quais são as três etapas principais do processo de ETL executadas pelo serviço AWS Glue? (Selecione 3 alternativas)",
     "options": [
-      "Carregar dados",
-      "Criptografar dados",
-      "Transformar dados",
-      "Extrair dados",
-      "Arquivar dados"
+      "Extrair dados (Extract) de diversas fontes",
+      "Transformar dados (Transform) aplicando limpeza e formatação",
+      "Carregar dados (Load) no destino para análise",
+      "Criptografar cabos físicos de fibra óptica",
+      "Hospedar sites estáticos diretamente na web"
     ],
-    "answer": 0,
-    "explanation": "O AWS Glue é um serviço de ETL serverless cujas funções centrais são:\n\n• **Extrair (Extract)** dados de diversas origens (bancos de dados, S3, data lakes).\n• **Transformar (Transform)** dados aplicando limpeza, formatação e agregações.\n• **Carregar (Load)** os dados prontos para análise em data warehouses como Amazon Redshift ou S3.",
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "O AWS Glue é um serviço de ETL totalmente gerenciado cuja sigla significa:\n\n• **Extract**: Extrair dados de bancos de dados, S3 ou streams.\n• **Transform**: Limpar, validar, mapear e transformar esquemas.\n• **Load**: Carregar os dados enriquecidos em data lakes (S3) ou data warehouses (Redshift).",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "89"
+    "id": "89",
+    "multiSelect": true,
+    "requiredSelections": 3
   },
   {
     "domainId": 3,
@@ -1348,7 +1550,9 @@
     "explanation": "Para obter alta disponibilidade e tolerância a falhas na mesma região geográfica com failover automático em caso de problemas na infraestrutura física, a recomendação oficial do Amazon RDS é ativar a configuração Multi-AZ (distribuição síncrona em múltiplas Zonas de Disponibilidade).",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "90"
+    "id": "90",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 2,
@@ -1363,23 +1567,27 @@
     "explanation": "O AWS Fargate é o mecanismo de computação serverless para contêineres que funciona com o Amazon ECS e o Amazon EKS. Com o Fargate, você não precisa gerenciar instâncias de servidores EC2, configurar sistemas operacionais ou ajustar capacidades de nós.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "91"
+    "id": "91",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
-    "question": "A Amazon oferece várias classes de armazenamento no S3 especificas para cada tipo de uso. Qual das opções abaixo são classes existentes no serviço?",
+    "question": "A Amazon oferece várias classes de armazenamento no S3 específicas para cada caso de uso. Qual classe é recomendada para dados pouco acessados, mas que necessitam de recuperação rápida em milissegundos quando solicitados?",
     "options": [
-      "S3 Standard Infrequent Access",
+      "S3 Standard-Infrequent Access (S3 Standard-IA)",
       "S3 Intelligent-Tiering",
-      "S3 Enterprise",
-      "S3 Business",
-      "S3 Standard"
+      "S3 Glacier Flexible Retrieval",
+      "S3 Glacier Deep Archive",
+      "S3 Express One Zone"
     ],
     "answer": 0,
     "explanation": "O S3 Standard-Infrequent Access (S3 Standard-IA) é indicado para dados que são acessados com menos frequência, mas exigem acesso rápido em milissegundos quando solicitados, oferecendo custo de armazenamento mais baixo que o Standard somado a uma pequena taxa por recuperação de dados.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "92"
+    "id": "92",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1394,7 +1602,9 @@
     "explanation": "O Amazon MSK (Managed Streaming for Apache Kafka) é o serviço totalmente gerenciado da AWS que simplifica a criação e execução de aplicações baseadas no Apache Kafka para ingestão contínua de logs e processamento de fluxos de eventos em tempo real.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "93"
+    "id": "93",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 2,
@@ -1409,7 +1619,9 @@
     "explanation": "PaaS (Plataforma como Serviço) é o modelo de nuvem onde o provedor gerencia a infraestrutura de hardware, rede, sistema operacional e servidores de aplicação. O usuário é responsável apenas pelo desenvolvimento e deploy do código da aplicação (exemplo: AWS Elastic Beanstalk).",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "94"
+    "id": "94",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1424,7 +1636,9 @@
     "explanation": "O AWS SDK (Software Development Kit) disponibiliza bibliotecas e APIs específicas para linguagens de programação (como Java, C#, Python, JavaScript e Go), facilitando a integração nativa dos serviços da AWS diretamente no código-fonte das aplicações.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "95"
+    "id": "95",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1439,23 +1653,30 @@
     "explanation": "O Amazon MQ é um serviço gerenciado de message broker para softwares de mensageria tradicionais do mercado, como Apache ActiveMQ e RabbitMQ, permitindo migrar aplicações legadas para a nuvem sem precisar reescrever a camada de mensageria.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "96"
+    "id": "96",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 2,
-    "question": "Quais opções representam recursos fundamentais do AWS Cloud Adoption Framework (AWS CAF) para a perspectiva de segurança?",
+    "question": "Quais opções representam recursos e práticas fundamentais da perspectiva de Segurança no AWS Cloud Adoption Framework (AWS CAF)? (Selecione 2 alternativas)",
     "options": [
       "Proteção de dados com criptografia em repouso e em trânsito",
-      "Planejamento de capacidade e desempenho",
-      "Implementação de controles de acesso baseados em identidade",
-      "Automação de respostas a eventos de segurança",
-      "Monitoramento de atividades e auditoria de logs de segurança"
+      "Controles de acesso baseados em identidade e menor privilégio",
+      "Negociação de contratos de energia elétrica para data centers",
+      "Planejamento de refrigeração de racks de servidores físicos",
+      "Gerenciamento manual de cabeamento de rede estruturada"
     ],
-    "answer": 0,
-    "explanation": "Na perspectiva de Segurança do AWS Cloud Adoption Framework (AWS CAF), os recursos fundamentais incluem:\n\n• Proteção de dados com criptografia em repouso e em trânsito.\n• Gerenciamento e controle de acesso baseado em identidades.\n• Monitoramento contínuo de atividades e auditoria de logs de segurança.\n• Automação de detecção e respostas a incidentes de segurança.",
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Na perspectiva de Segurança do AWS CAF, os pilares incluem proteção de dados (criptografia), controle de identidade e acesso (IAM), segurança de rede e resposta a incidentes.\n\n• **Infraestrutura física**: Energia, refrigeração e cabeamento são gerenciados integralmente pela AWS.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "97"
+    "id": "97",
+    "multiSelect": true,
+    "requiredSelections": 2
   },
   {
     "domainId": 2,
@@ -1470,21 +1691,26 @@
     "explanation": "O Amazon Macie é um serviço de segurança de dados totalmente gerenciado que utiliza machine learning e correspondência de padrões para descobrir, classificar e proteger automaticamente dados confidenciais e dados pessoais identificáveis (PII) armazenados no Amazon S3.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "98"
+    "id": "98",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
-    "question": "Qual é o banco de dados sem servidor da AWS que oferece escalabilidade automática, suporte a esquemas flexíveis e é ideal para cargas de trabalho que requerem baixa latência, como jogos e IOT?",
+    "question": "Qual é o banco de dados sem servidor (serverless) da AWS que oferece escalabilidade automática, suporte a esquemas flexíveis (chave-valor e documentos) e é ideal para cargas de trabalho que requerem baixa latência de milissegundos, como jogos e IoT?",
     "options": [
-      "MySQL",
-      "Aurora",
-      "MariaDB"
+      "Amazon DynamoDB",
+      "Amazon RDS for MySQL",
+      "Amazon RDS for PostgreSQL",
+      "Amazon RDS for MariaDB"
     ],
     "answer": 0,
     "explanation": "O Amazon Aurora Serverless é a configuração sob demanda e com escalabilidade automática do Amazon Aurora (compatível com MySQL e PostgreSQL), ajustando sua capacidade de computação automaticamente com base na demanda da aplicação e pausando durante períodos de inatividade.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "99"
+    "id": "99",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1499,7 +1725,9 @@
     "explanation": "O IAM Groups (Grupos do IAM) permite organizar coleções de usuários e aplicar políticas de permissões a todos os membros do grupo de uma só vez. Isso simplifica a administração e governança de acessos para equipes grandes (como 100 funcionários) que exercem funções semelhantes.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "100"
+    "id": "100",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 2,
@@ -1514,38 +1742,51 @@
     "explanation": "Para obter controle e gerenciamento total sobre o banco de dados (incluindo acesso root/administrador ao sistema operacional, escolha de patches de SO e ajustes no kernel), a opção indicada é executar o banco de dados diretamente em instâncias do Amazon EC2 (IaaS).",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "101"
+    "id": "101",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 2,
-    "question": "Selecione as afirmações verdadeiras sobre o AWS Identity and Access Management (IAM), o serviço que permite gerenciar o acesso aos recursos da AWS de forma segura. Sua seleção está incorreta [8 Necessita de uma conta root para criar novos usuários e grupos",
+    "question": "Selecione as afirmações verdadeiras sobre o AWS Identity and Access Management (IAM): (Selecione 2 alternativas)",
     "options": [
-      "Necessita de uma conta root para criar novos usuários e grupos",
-      "Suporta a integração com provedores de identidade externos para autenticaç",
-      "MFA) para aumentar a segurança das contas",
-      "Não permite a delegação de permissões específicas para serviços da AWS"
+      "Suporta a integração com provedores de identidade externos (SAML 2.0 / OpenID Connect)",
+      "Permite habilitar autenticação multifator (MFA) para maior segurança das contas",
+      "Necessita obrigatoriamente da conta root para todas as tarefas do dia a dia",
+      "Não permite a delegação de permissões específicas para serviços da AWS",
+      "Cobra taxas mensais adicionais fixas por cada usuário cadastrado"
     ],
-    "answer": 1,
-    "explanation": "Sobre o AWS Identity and Access Management (IAM):\n\n• Suporta autenticação federada com provedores de identidade externos (como Active Directory, Okta, SAML 2.0 e OpenID Connect).\n• Recomenda fortemente habilitar Multi-Factor Authentication (MFA) para proteger contas e usuários com privilégios elevados.",
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "O AWS IAM é um serviço global e gratuito que suporta federação de identidades com diretórios corporativos (SAML/OpenID) e recomenda fortemente o uso de MFA para proteger credenciais.\n\n• **Conta root**: Deve ser bloqueada e não utilizada nas tarefas diárias.\n• **Delegação de permissões**: É a função primária do IAM através de Roles e Policies.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "102"
+    "id": "102",
+    "multiSelect": true,
+    "requiredSelections": 2
   },
   {
     "domainId": 3,
-    "question": "Quais dos itens não fazem parte dos pilares do Well-Architected Framework?",
+    "question": "Quais dos itens abaixo NÃO fazem parte dos 6 pilares oficiais do AWS Well-Architected Framework? (Selecione 2 alternativas)",
     "options": [
+      "Elasticidade",
+      "Desacoplamento",
       "Segurança",
       "Sustentabilidade",
-      "Excelência Operacional",
-      "Elasticidade",
-      "Desacoplamento"
+      "Excelência Operacional"
     ],
-    "answer": 3,
-    "explanation": "Os 6 pilares oficiais do AWS Well-Architected Framework são: Excelência Operacional, Segurança, Confiabilidade, Eficiência de Desempenho, Otimização de Custos e Sustentabilidade. Termos como Elasticidade e Desacoplamento são boas práticas arquiteturais, e não pilares.",
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Elasticidade e Desacoplamento são boas práticas arquiteturais recomendadas na nuvem, mas NÃO são pilares do Well-Architected Framework.\n\n• Os 6 pilares oficiais são: Excelência Operacional, Segurança, Confiabilidade, Eficiência de Desempenho, Otimização de Custos e Sustentabilidade.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "103"
+    "id": "103",
+    "multiSelect": true,
+    "requiredSelections": 2
   },
   {
     "domainId": 3,
@@ -1560,7 +1801,9 @@
     "explanation": "O Amazon CloudFront é a Content Delivery Network (CDN) global da AWS que entrega dados, vídeos, aplicações e APIs a espectadores em todo o mundo com baixa latência e altas velocidades de transferência, utilizando uma rede mundial de Pontos de Presença (Edge Locations).",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "104"
+    "id": "104",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1575,7 +1818,9 @@
     "explanation": "O AWS License Manager permite que empresas gerenciem e controlem suas licenças de software de fornecedores como Microsoft e Oracle, definindo limites e regras que impedem a utilização de licenças além do contratado durante o provisionamento de instâncias na AWS.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "105"
+    "id": "105",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 4,
@@ -1590,7 +1835,9 @@
     "explanation": "O modelo de pagamento conforme o uso (Pay-as-you-go) permite que os clientes paguem exclusivamente pelos recursos de computação, armazenamento e rede consumidos, sem exigir taxas de adesão, custos iniciais de investimento de capital (CapEx) ou taxas de cancelamento.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "106"
+    "id": "106",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 4,
@@ -1605,7 +1852,9 @@
     "explanation": "Os snapshots manuais de bancos de dados no Amazon RDS são armazenados regionalmente no S3 e retidos até que o cliente decida excluí-los explicitamente. Além disso, o cliente pode copiar esses snapshots para outras regiões geográficas para fins de conformidade e recuperação de desastres.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "107"
+    "id": "107",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1620,7 +1869,9 @@
     "explanation": "A principal distinção técnica é:\n\n• **Amazon RDS**: Banco de dados relacional baseado em SQL com esquemas rígidos e tabelas estruturadas (PostgreSQL, MySQL, Oracle, SQL Server).\n• **Amazon DynamoDB**: Banco de dados não relacional NoSQL de chave-valor e documentos, sem servidor, projetado para altíssima escala e esquemas dinâmicos.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "108"
+    "id": "108",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1635,50 +1886,61 @@
     "explanation": "O Amazon Kendra é um serviço corporativo de pesquisa inteligente baseado em aprendizado de máquina (Machine Learning). Ele permite indexar documentos corporativos (PDFs, Word, SharePoint, S3) e responder a perguntas dos usuários em linguagem natural com alta precisão.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "109"
+    "id": "109",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
-    "question": "Para desenvolver uma solução que permita a uma aplicação escalonar automaticamente conforme a demanda, quais serviços da AWS são essenciais?",
+    "question": "Para desenvolver uma solução que permita a uma aplicação web escalonar automaticamente o número de instâncias EC2 de acordo com o aumento ou redução do tráfego, qual serviço deve ser configurado?",
     "options": [
-      "CloudFormation",
-      "Route 53",
-      "Auto Scaling Group (Auto Scaling Group (ASG))",
-      "Elastic Load Balancer (ELB)",
-      "CloudFront"
+      "Auto Scaling Group (ASG)",
+      "AWS CloudFormation",
+      "Amazon Route 53",
+      "Elastic Load Balancing (ELB)",
+      "Amazon CloudFront"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Um Auto Scaling Group (ASG) monitora as instâncias da aplicação e ajusta automaticamente o número de instâncias EC2 ativas de acordo com regras de escalabilidade definidas (como consumo de CPU ou volume de requisições), garantindo elasticidade e disponibilidade.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "110"
+    "id": "110",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
     "question": "Clientes na Europa e Austrália enfrentam lentidão no carregamento de imagens em um site cuja infraestrutura está na Região de São Paulo. Qual solução imediata poderia ser implementada para melhorar a performance global, considerando a necessidade de reduzir a latência e otimizar a experiência do usuário?",
     "options": [
-      "habilitar o CloudFront",
-      "habilitar o Intelligent-Tiering das classes do S3",
-      "deixar as imagens numa resolução bem baixa"
+      "Habilitar o Amazon CloudFront para distribuir o conteúdo em Edge Locations globais",
+      "Habilitar o S3 Intelligent-Tiering para reduzir os custos de armazenamento",
+      "Reduzir drasticamente a resolução das imagens salvas no servidor",
+      "Provisionar instâncias EC2 adicionais na mesma Região de São Paulo"
     ],
     "answer": 0,
     "explanation": "Para acelerar o carregamento de imagens e conteúdos estáticos para usuários distribuídos globalmente (como na Europa e Austrália), a melhor prática da AWS é habilitar o Amazon CloudFront, que armazena os arquivos em cache em Pontos de Presença (Edge Locations) próximos aos usuários finais.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "111"
+    "id": "111",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
-    "question": "No contexto do modelo de responsabilidade compartilhada, a AWS é responsável pela segurança da infraestrutura global onde os dados são armazenados. O que pode ser afirmado sobre a criptografia utilizada nesse processo?",
+    "question": "No contexto do Modelo de Responsabilidade Compartilhada da AWS, qual das seguintes alternativas descreve corretamente a divisão de responsabilidades sobre a criptografia e proteção dos dados?",
     "options": [
-      "A AWS criptografa automaticamente somente os dados em trânsito, enquanto os clie",
-      "ACM para o cliente fazê-la"
+      "O cliente é responsável por configurar e gerenciar a criptografia de seus dados na nuvem (em repouso e em trânsito)",
+      "A AWS é responsável por criptografar automaticamente e sem intervenção todos os arquivos e dados de clientes",
+      "O cliente é responsável pela segurança física e manutenção dos discos rígidos nos data centers da AWS",
+      "A AWS é a única responsável pela gestão de identidades e permissões de acesso dos usuários finais"
     ],
     "answer": 0,
     "explanation": "No Modelo de Responsabilidade Compartilhada da AWS:\n\n• **AWS**: Responsável pela segurança DA nuvem (infraestrutura física, hardware, data centers e camada de virtualização).\n• **Cliente**: Responsável pela segurança NA nuvem, incluindo a configuração de criptografia de seus dados em repouso e em trânsito (utilizando ferramentas como AWS KMS e ACM).",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "112"
+    "id": "112",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1693,38 +1955,48 @@
     "explanation": "O AWS Amplify é um conjunto completo de ferramentas, bibliotecas e serviços de hospedagem que permite que desenvolvedores web e mobile criem, integrem e implementem aplicações full-stack na AWS de forma ágil e descomplicada.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "113"
+    "id": "113",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
-    "question": "Quais são as principais funcionalidades do Amazon SageMaker?",
+    "question": "Quais são as principais capacidades oferecidas pelo Amazon SageMaker no ciclo de vida de Machine Learning? (Selecione 2 alternativas)",
     "options": [
-      "Gerenciar clusters de contêineres Kubernetes",
-      "Preparar, construir e implantar APIs REST",
-      "Publicar documentação de APIs com Swagger",
-      "Preparar, construir, treinar e implantar modelos de Machine Learning",
-      "Criar pipelines de CI/CD para código-fonte"
+      "Preparar, construir e treinar modelos de Machine Learning",
+      "Implantar e monitorar modelos de Machine Learning em produção",
+      "Gerenciar clusters locais de contêineres on-premises",
+      "Substituir o Amazon Route 53 no gerenciamento de domínios DNS",
+      "Proteger redes corporativas contra ataques DDoS na camada 3 e 4"
     ],
-    "answer": 3,
-    "explanation": "O Amazon SageMaker é a plataforma completa de Machine Learning da AWS que oferece ferramentas integradas para que cientistas de dados e desenvolvedores possam preparar dados, construir, treinar, otimizar e implantar modelos de ML em escala.",
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "O Amazon SageMaker é a plataforma integrada de ponta a ponta da AWS que permite aos desenvolvedores e cientistas de dados preparar dados, construir, treinar, validar, implantar e monitorar modelos de Machine Learning com alta eficiência.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "114"
+    "id": "114",
+    "multiSelect": true,
+    "requiredSelections": 2
   },
   {
     "domainId": 3,
-    "question": "A AWS é uma infraestrutura cloud global segura, escalável e confiável que oferece diversos serviços em muitos países ao redor do mundo. Sobre sua distribuição global, podemos afirmar que: A infraestrutura global da AWS é composta por apenas uma Região com várias Zonas O de Disponibilidade (AZs), usadas para atender ao tráfego de todos os continentes",
+    "question": "Em relação à infraestrutura global da AWS, qual das seguintes afirmações sobre Regiões e Zonas de Disponibilidade (AZs) está correta?",
     "options": [
-      "A infraestrutura global da AWS é composta por apenas uma Região com várias Zonas de Disponibilidade (AZs)",
-      "As regiões da AWS são compostas por múltiplas Zonas de Disponibilidade (AZs), qu",
-      "As Zonas de Disponibilidade (AZs) são áreas geográficas independentes que agrupa",
-      "AZs), garantindo uniformidade na distribuição global"
+      "Cada Região da AWS é composta por pelo menos duas ou mais Zonas de Disponibilidade (AZs) isoladas",
+      "Uma Região é composta por apenas um único data center compartilhado",
+      "Zonas de Disponibilidade são apenas nomes lógicos sem instalações físicas reais",
+      "Todas as Regiões da AWS possuem exatamente a mesma quantidade de data centers",
+      "Uma Zona de Disponibilidade conecta diretamente todas as Regiões sem necessidade de cabos submarinos"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Uma Região da AWS (Region) é uma localização geográfica física no mundo que contém múltiplas Zonas de Disponibilidade (AZs). Cada AZ é composta por um ou mais data centers isolados, alimentados por energia redundante e conectados por redes de altíssima velocidade e baixa latência.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "115"
+    "id": "115",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1739,7 +2011,9 @@
     "explanation": "O AWS Device Farm é um serviço de teste de aplicações que permite testar aplicativos web e mobile em centenas de smartphones, tablets e navegadores reais na nuvem em paralelo, acelerando os ciclos de qualidade e validação de software.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "116"
+    "id": "116",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 4,
@@ -1754,7 +2028,9 @@
     "explanation": "A classe de armazenamento S3 Intelligent-Tiering monitora automaticamente os padrões de acesso aos dados e move os objetos entre camadas de acesso frequente, pouco frequente e arquivamento sem impacto na performance e sem cobrar taxas de recuperação, gerando economia automática.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "117"
+    "id": "117",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1769,7 +2045,9 @@
     "explanation": "A família AWS Snow (como o AWS Snowball e Snowcone) utiliza dispositivos de hardware reforçados e seguros para transportar volumes massivos de dados (de dezenas de Terabytes a Petabytes) fisicamente entre o data center do cliente e a AWS, contornando limitações de banda de rede.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "118"
+    "id": "118",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1784,7 +2062,9 @@
     "explanation": "O AWS SDK (Software Development Kit) disponibiliza bibliotecas específicas para linguagens de programação que encapsulam a comunicação com a API REST da AWS, permitindo que aplicações realizem chamadas a serviços da AWS diretamente a partir do código-fonte.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "119"
+    "id": "119",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1799,7 +2079,9 @@
     "explanation": "O Elastic Load Balancing (ELB) distribui automaticamente o tráfego de entrada de aplicações entre múltiplos destinos saudáveis (como instâncias EC2, contêineres e endereços IP) em várias Zonas de Disponibilidade, aumentando a tolerância a falhas e a resiliência.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "120"
+    "id": "120",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1814,7 +2096,9 @@
     "explanation": "O Amazon S3 Transfer Acceleration utiliza a rede globalmente distribuída de Edge Locations do Amazon CloudFront para acelerar uploads de arquivos a longas distâncias para buckets do Amazon S3 com segurança e velocidade otimizada.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "121"
+    "id": "121",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 2,
@@ -1829,7 +2113,9 @@
     "explanation": "O Amazon SES (Simple Email Service) é um serviço de e-mail baseado em nuvem, econômico e escalável, projetado para permitir que aplicações enviem e recebam e-mails transacionais, de marketing e notificações em larga escala.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "122"
+    "id": "122",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1844,7 +2130,9 @@
     "explanation": "O AWS Elastic Beanstalk é um serviço de Plataforma como Serviço (PaaS) para rápida implantação e escalabilidade de aplicações web desenvolvidas em Java, .NET, PHP, Node.js, Python, Ruby e Docker, gerenciando automaticamente provisionamento de instâncias, balanceamento de carga e escalabilidade.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "123"
+    "id": "123",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 2,
@@ -1859,7 +2147,9 @@
     "explanation": "O AWS Config avalia, audita e monitora continuamente as configurações dos recursos da AWS em relação a regras de conformidade internas e setoriais, mantendo um histórico detalhado de alterações em toda a infraestrutura.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "124"
+    "id": "124",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1874,7 +2164,9 @@
     "explanation": "O plano AWS Enterprise Support oferece um Gerente Técnico de Contas (TAM - Technical Account Manager) dedicado, que atua como consultor de confiança monitorando o ambiente proativamente e coordenando o acesso a especialistas da AWS.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "125"
+    "id": "125",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1889,7 +2181,9 @@
     "explanation": "No modelo de responsabilidade compartilhada, a redundância geográfica e a proteção contra falhas em volumes EBS é responsabilidade do cliente, que deve criar snapshots periódicos dos volumes EBS e configurá-los para replicação em outras regiões da AWS.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "126"
+    "id": "126",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 4,
@@ -1904,7 +2198,9 @@
     "explanation": "Instâncias On-Demand (Sob Demanda) do Amazon EC2 são ideais para aplicações novas, pilotos e cargas com padrões de uso desconhecidos ou imprevisíveis, pois não exigem compromissos de longo prazo e são cobradas estritamente por segundo de uso.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "127"
+    "id": "127",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1919,7 +2215,9 @@
     "explanation": "O Amazon DynamoDB é um banco de dados NoSQL baseado em chave-valor e documentos. Ele NÃO é recomendado quando o modelo de dados exige relacionamentos complexos entre tabelas conectadas por chaves primárias e estrangeiras tradicionais — cenário em que bancos relacionais (MySQL, MariaDB, Aurora) são adequados.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "128"
+    "id": "128",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1934,7 +2232,9 @@
     "explanation": "O AWS Step Functions permite orquestrar e coordenar a execução de múltiplas funções AWS Lambda e outros serviços em fluxos de trabalho visuais estruturados com tratamento automático de exceções e controle de estado.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "129"
+    "id": "129",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -1949,11 +2249,13 @@
     "explanation": "A Amazon AMI (Amazon Machine Image) fornece as informações necessárias para iniciar uma instância EC2, contendo um modelo com o sistema operacional, servidores de aplicações e configurações pré-instaladas.\n\n• **Amazon ECR**: Registro gerenciado de contêineres Docker.\n• **Amazon EBS**: Armazenamento em bloco persistente montado em instâncias EC2.\n• **Amazon EFS**: Sistema de arquivos elástico compartilhado em rede via NFS.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "130"
+    "id": "130",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
-    "question": "Quais dos itens abaixo fazem parte dos pilares do Well-Architected Framework?",
+    "question": "Quais dos itens abaixo fazem parte dos pilares oficiais do AWS Well-Architected Framework? (Selecione 3 alternativas)",
     "options": [
       "Sustentabilidade",
       "Otimização de Custos",
@@ -1961,11 +2263,17 @@
       "Eficiência de Performance",
       "Resiliência"
     ],
-    "answer": 0,
-    "explanation": "Sustentabilidade, Otimização de Custos e Eficiência de Performance são pilares oficiais do AWS Well-Architected Framework. Disponibilidade e Resiliência são objetivos de engenharia decorrentes desses pilares.",
+    "answer": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Sustentabilidade, Otimização de Custos e Eficiência de Performance são pilares oficiais do AWS Well-Architected Framework.\n\n• **Disponibilidade e Resiliência**: São objetivos de projeto e características técnicas alcançadas através do pilar Confiabilidade, mas não são nomes de pilares.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "131"
+    "id": "131",
+    "multiSelect": true,
+    "requiredSelections": 3
   },
   {
     "domainId": 3,
@@ -1980,22 +2288,27 @@
     "explanation": "O Amazon ECS (Elastic Container Service) é um serviço de orquestração de contêineres de alta performance totalmente gerenciado pela AWS, que facilita a execução e o gerenciamento de contêineres Docker em larga escala na infraestrutura da AWS.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "132"
+    "id": "132",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 4,
-    "question": "departamento de marketing de uma empresa está elaborando uma campanha com duração de 12 meses. Antecipadamente, prevê-se um aumento no número de clientes no site, exigindo a adição de mais 3 instâncias EC2 para atender à demanda ao longo desse período. Qual tipo de instância apresentaria um custo mais vantajoso para esse cenário?",
+    "question": "O departamento de marketing de uma empresa está elaborando uma campanha contínua com duração prevista de 12 meses ininterruptos. Qual modelo de compra de instâncias EC2 oferece a maior economia para essa carga de trabalho permanente?",
     "options": [
-      "Spot",
-      "AWS Cloud Practitioner",
-      "Reserved",
-      "On-Demand"
+      "Instâncias Reservadas (Reserved Instances) ou Savings Plans",
+      "Instâncias On-Demand (Sob Demanda)",
+      "Instâncias Spot",
+      "Instâncias de Teste Temporário (Free Tier)",
+      "Dedicated Hosts sem compromisso de prazo"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Para campanhas com duração conhecida e previsível (como 12 meses contínuos), as Instâncias Reservadas (Reserved Instances) ou Savings Plans do EC2 oferecem descontos significativos (de até 72%) em comparação com o preço sob demanda.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "133"
+    "id": "133",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 2,
@@ -2010,7 +2323,9 @@
     "explanation": "O AWS Certificate Manager (ACM) simplifica o gerenciamento centralizado de certificados SSL/TLS, permitindo emitir, implantar e renovar automaticamente certificados criptográficos em serviços integrados da AWS (como Elastic Load Balancing e CloudFront).",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "134"
+    "id": "134",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -2025,7 +2340,9 @@
     "explanation": "O plano AWS Enterprise Support é o único plano de suporte oficial que garante tempo de resposta inferior a 15 minutos para incidentes críticos que deixem sistemas fora do ar (business-critical system down).",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "135"
+    "id": "135",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -2040,7 +2357,9 @@
     "explanation": "A AWS CLI (Interface de Linha de Comando) permite que engenheiros e administradores executem comandos no terminal e criem scripts automatizados de provisionamento e gerenciamento de recursos na AWS.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "136"
+    "id": "136",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -2055,7 +2374,9 @@
     "explanation": "SaaS (Software como Serviço) é o modelo onde o usuário final consome a aplicação pronta diretamente pela web (como e-mail corporativo ou CRM na nuvem), sem se preocupar com infraestrutura de servidores, desenvolvimento ou deploy de código.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "137"
+    "id": "137",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 4,
@@ -2070,7 +2391,9 @@
     "explanation": "Para uma aplicação crítica que utiliza entre 5 e 10 instâncias continuamente, a estratégia mais econômica e segura é contratar 5 instâncias Reservadas (para cobrir a carga base permanente com o maior desconto) e usar 5 instâncias On-Demand para absorver picos variáveis conforme necessário.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "138"
+    "id": "138",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -2085,7 +2408,9 @@
     "explanation": "O plano AWS Business Support oferece acesso ilimitado 24x7 a engenheiros do Cloud Support por telefone, chat e e-mail para um número irrestrito de usuários da conta.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "139"
+    "id": "139",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -2100,7 +2425,9 @@
     "explanation": "O Amazon ECS (em conjunto com o AWS Fargate) permite implantar e orquestrar milhares de contêineres de maneira rápida e padronizada em múltiplos ambientes com total abstração de gerenciamento de servidores físicos.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "140"
+    "id": "140",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -2115,7 +2442,9 @@
     "explanation": "O AWS Lambda é o serviço de computação serverless orientado a eventos perfeito para executar funções de código sob demanda disparadas por alterações em bancos de dados ou novos eventos em filas.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "141"
+    "id": "141",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -2130,7 +2459,9 @@
     "explanation": "O Amazon Lex é o serviço da AWS para criação de interfaces conversacionais em aplicações utilizando voz e texto (a mesma tecnologia de Processamento de Linguagem Natural e reconhecimento de fala da assistente Alexa).",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "142"
+    "id": "142",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -2145,7 +2476,9 @@
     "explanation": "O Amazon Cognito NÃO é uma ferramenta de linha de comando para autenticação em terminal. Ele é um serviço gerenciado de identidade e diretório de usuários que adiciona cadastro, login e controle de acesso a aplicativos web e mobile, integrando-se com provedores como Google, Facebook, Apple e SAML 2.0.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "143"
+    "id": "143",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -2160,7 +2493,9 @@
     "explanation": "O Amazon ElastiCache é um serviço de cache em memória totalmente gerenciado (compatível com Redis e Memcached) que reduz a latência e acelera drasticamente as consultas ao banco de dados relacional armazenando em memória dados consultados com frequência.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "144"
+    "id": "144",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -2175,7 +2510,9 @@
     "explanation": "Para que uma função AWS Lambda possa gravar dados no Amazon DynamoDB, é obrigatório associar uma IAM Role (Função de Execução) à função Lambda contendo uma política de permissão com ações de PutItem ou BatchWriteItem no DynamoDB.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "145"
+    "id": "145",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -2190,23 +2527,31 @@
     "explanation": "A Amazon VPC (Virtual Private Cloud) permite provisionar uma seção isolada logicamente na nuvem da AWS onde você pode lançar instâncias EC2 e outros recursos em uma rede virtual personalizada com controle total sobre sub-redes e tabelas de rotas.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "146"
+    "id": "146",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
-    "question": "Um objeto do S3 é composto por quais componentes?",
+    "question": "No Amazon S3, quais são os três componentes fundamentais que compõem um objeto armazenado? (Selecione 3 alternativas)",
     "options": [
-      "Dados",
-      "Roles",
-      "Policy",
-      "Metadados",
-      "Identificador exclusivo (chave)"
+      "Dados (o conteúdo do arquivo em si)",
+      "Metadados (informações sobre o arquivo)",
+      "Identificador exclusivo (Chave / Key)",
+      "Instância EC2 associada",
+      "Certificado SSL dedicado"
     ],
-    "answer": 0,
-    "explanation": "No Amazon S3, um objeto é composto fundamentalmente por três elementos: os Dados em si (o conteúdo do arquivo), os Metadados associados (informações sobre o arquivo, como tipo MIME e data) e um Identificador exclusivo (Chave/Key do objeto dentro do bucket).",
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "No Amazon S3, cada objeto é composto fundamentalmente por três elementos:\n\n• **Dados**: O conteúdo binário ou textual do arquivo.\n• **Metadados**: Pares de chave-valor que descrevem o objeto (como tipo MIME e data de modificação).\n• **Chave (Key)**: O identificador exclusivo do objeto dentro do bucket.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "147"
+    "id": "147",
+    "multiSelect": true,
+    "requiredSelections": 3
   },
   {
     "domainId": 3,
@@ -2221,7 +2566,9 @@
     "explanation": "Um Security Group atua como um firewall virtual no nível da instância EC2, controlando o tráfego de entrada (inbound) e de saída (outbound). Por padrão, todo tráfego de entrada é bloqueado até que regras explícitas sejam adicionadas.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "148"
+    "id": "148",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -2236,7 +2583,9 @@
     "explanation": "Uma Região da AWS (Region) é uma área geográfica física no mundo que contém pelo menos duas ou mais Zonas de Disponibilidade (AZs) isoladas e conectadas por links de baixa latência.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "149"
+    "id": "149",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -2251,7 +2600,9 @@
     "explanation": "O AWS Security Hub fornece uma visão abrangente e consolidada do status de segurança e conformidade de todos os recursos da organização em múltiplas contas da AWS, verificando continuamente em relação a padrões de segurança (como CIS e PCI-DSS).",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "150"
+    "id": "150",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -2266,7 +2617,9 @@
     "explanation": "O Amazon Redshift é o data warehouse em nuvem totalmente gerenciado e de alto desempenho da AWS, projetado especificamente para consultas analíticas complexas e soluções de Business Intelligence (BI) em petabytes de dados estruturados.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "151"
+    "id": "151",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 4,
@@ -2281,7 +2634,9 @@
     "explanation": "Na AWS, a transferência de dados de entrada da Internet para a AWS (Inbound Data Transfer) é gratuita para a grande maioria dos serviços. As cobranças de rede aplicam-se principalmente à transferência de dados de saída (Outbound) da AWS para a Internet ou entre regiões distintas.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "152"
+    "id": "152",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -2296,7 +2651,9 @@
     "explanation": "O Amazon ElastiCache for Redis é a solução de cache em memória ideal para armazenar sessões de usuários de aplicações web com altíssima velocidade e persistência de dados, mantendo a camada de aplicação sem estado (stateless) conforme as recomendações dos 12 fatores.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "153"
+    "id": "153",
+    "multiSelect": false,
+    "requiredSelections": 1
   },
   {
     "domainId": 3,
@@ -2311,6 +2668,8 @@
     "explanation": "O Amazon RDS (Relational Database Service) é o serviço recomendado para implementar e gerenciar bancos de dados relacionais na AWS, automatizando tarefas administrativas como provisionamento de hardware, backups automáticos, replicação e aplicação de patches de segurança.",
     "source": "PDF_SIMULADO",
     "active": true,
-    "id": "154"
+    "id": "154",
+    "multiSelect": false,
+    "requiredSelections": 1
   }
 ]

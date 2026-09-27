@@ -65,8 +65,23 @@ function QuizContent() {
     async function load() {
       if (!isReady) return;
 
-      // If state already has questions, we are resuming
-      if (state.questions.length > 0) {
+      const domainIdParam = searchParams.get('domainId');
+      const countParam = searchParams.get('count');
+      const modeParam = searchParams.get('mode') as 'practice' | 'exam' | null;
+
+      const hasExplicitParams = searchParams.toString().length > 0;
+      const parsedCount = countParam === 'all' || countParam === '154' ? 'all' : countParam ? parseInt(countParam, 10) : 25;
+      const parsedDomain = domainIdParam ? parseInt(domainIdParam, 10) : 0;
+      const parsedMode = modeParam || 'practice';
+
+      // If state already has questions and parameters match (or no explicit query was given), resume
+      const isSameAsSaved =
+        state.questions.length > 0 &&
+        state.domain === parsedDomain &&
+        (state.count === parsedCount || (parsedCount === 'all' && state.count === 'all')) &&
+        state.mode === parsedMode;
+
+      if (state.questions.length > 0 && (!hasExplicitParams || isSameAsSaved)) {
         setIsLoading(false);
         return;
       }
@@ -74,15 +89,12 @@ function QuizContent() {
       // Otherwise fetch new questions
       try {
         setIsLoading(true);
-        const domainIdParam = searchParams.get('domainId');
-        const countParam = searchParams.get('count');
-        const modeParam = searchParams.get('mode') as 'practice' | 'exam' | null;
 
-        const domainId = domainIdParam ? parseInt(domainIdParam, 10) : 0;
-        const count = countParam === 'all' ? 'all' : (countParam ? parseInt(countParam, 10) : 25);
-        const mode = modeParam || 'practice';
+        const domainId = parsedDomain;
+        const count = parsedCount;
+        const mode = parsedMode;
 
-        const questionsParams: any = {};
+        const questionsParams: { domainId?: number; count?: number } = {};
         if (domainId > 0) questionsParams.domainId = domainId;
         if (count !== 'all') questionsParams.count = count;
 

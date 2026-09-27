@@ -10,6 +10,7 @@ import ReviewList from '@/components/ReviewList';
 import { useLocalStorage } from '@/hooks/useLocalStorage';
 import { useHistory } from '@/hooks/useHistory';
 import { calculateScaledScore, calculatePercentage, isPassing } from '@/lib/scoring';
+import { isAnswerCorrect } from '@/lib/quizUtils';
 import { PASS_SCORE } from '@/config/constants';
 import type { QuizState, DomainStats } from '@/lib/types';
 
@@ -42,7 +43,7 @@ function ResultsContent() {
 
       questions.forEach((q, index) => {
         const userAnswer = userAnswers[index];
-        const isCorrect = userAnswer === q.answer;
+        const isCorrect = isAnswerCorrect(q, userAnswer);
         
         if (isCorrect) correct++;
 

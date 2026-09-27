@@ -29,7 +29,8 @@ export function useQuiz() {
   const [isReady, setIsReady] = useState(false);
   
   useEffect(() => {
-    setIsReady(true);
+    const timer = setTimeout(() => setIsReady(true), 0);
+    return () => clearTimeout(timer);
   }, []);
 
   // Sync state changes back to local storage
@@ -50,13 +51,51 @@ export function useQuiz() {
   }, []);
 
   const selectAnswer = useCallback((answerIndex: number) => {
-    setState((prev) => ({
-      ...prev,
-      userAnswers: {
-        ...prev.userAnswers,
-        [prev.currentIndex]: answerIndex,
-      },
-    }));
+    setState((prev) => {
+      const q = prev.questions[prev.currentIndex];
+      const isMulti = q && (q.multiSelect || Array.isArray(q.answer) || (q.requiredSelections && q.requiredSelections > 1));
+
+      if (isMulti) {
+        const required = q.requiredSelections || (Array.isArray(q.answer) ? q.answer.length : 2);
+        const currentAns = prev.userAnswers[prev.currentIndex];
+        const currentList: number[] = Array.isArray(currentAns)
+          ? [...currentAns]
+          : currentAns !== undefined
+          ? [currentAns as number]
+          : [];
+
+        let nextList: number[];
+        if (currentList.includes(answerIndex)) {
+          nextList = currentList.filter((idx) => idx !== answerIndex);
+        } else {
+          if (currentList.length >= required) {
+            nextList = [...currentList.slice(1), answerIndex];
+          } else {
+            nextList = [...currentList, answerIndex];
+          }
+        }
+
+        const newUserAnswers = { ...prev.userAnswers };
+        if (nextList.length > 0) {
+          newUserAnswers[prev.currentIndex] = nextList;
+        } else {
+          delete newUserAnswers[prev.currentIndex];
+        }
+
+        return {
+          ...prev,
+          userAnswers: newUserAnswers,
+        };
+      }
+
+      return {
+        ...prev,
+        userAnswers: {
+          ...prev.userAnswers,
+          [prev.currentIndex]: answerIndex,
+        },
+      };
+    });
   }, []);
 
   const toggleFlag = useCallback(() => {
@@ -115,7 +154,7 @@ export function useQuiz() {
     updateTimeLeft,
     clearSavedState,
     currentQuestion: state.questions[state.currentIndex] as Question | undefined,
-    isAnswered: state.userAnswers[state.currentIndex] !== undefined,
+    isAnswered: state.userAnswers[state.currentIndex] !== undefined && (Array.isArray(state.userAnswers[state.currentIndex]) ? (state.userAnswers[state.currentIndex] as number[]).length > 0 : true),
     isFlagged: !!state.flagged[state.currentIndex],
   };
 }

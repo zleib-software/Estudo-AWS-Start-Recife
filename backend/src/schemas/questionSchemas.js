@@ -17,17 +17,25 @@ const questionBase = z
       .array(z.string().min(1, 'Alternativa não pode ser vazia'))
       .min(2, 'É necessário no mínimo 2 alternativas')
       .max(10, 'Máximo de 10 alternativas'),
-    answer: z
-      .number({ required_error: 'answer é obrigatório' })
-      .int('answer deve ser inteiro'),
+    answer: z.union([
+      z.number({ required_error: 'answer é obrigatório' }).int('answer deve ser inteiro'),
+      z.array(z.number().int()).min(1, 'answer deve conter ao menos um índice'),
+    ]),
+    multiSelect: z.boolean().optional(),
+    requiredSelections: z.number().int().optional(),
     explanation: z.string().trim().default(''),
     source: z.string().trim().optional(),
     active: z.boolean().optional().default(true),
   })
   .refine(
-    (data) => data.answer >= 0 && data.answer < data.options.length,
+    (data) => {
+      if (Array.isArray(data.answer)) {
+        return data.answer.every((idx) => idx >= 0 && idx < data.options.length);
+      }
+      return data.answer >= 0 && data.answer < data.options.length;
+    },
     {
-      message: 'answer deve ser um índice válido dentro de options (0 a options.length - 1)',
+      message: 'answer deve ser um índice ou lista de índices válidos dentro de options (0 a options.length - 1)',
       path: ['answer'],
     }
   );
@@ -47,7 +55,9 @@ export const updateQuestionSchema = z
       .min(2)
       .max(10)
       .optional(),
-    answer: z.number().int().optional(),
+    answer: z.union([z.number().int(), z.array(z.number().int()).min(1)]).optional(),
+    multiSelect: z.boolean().optional(),
+    requiredSelections: z.number().int().optional(),
     explanation: z.string().trim().optional(),
     source: z.string().trim().optional(),
     active: z.boolean().optional(),
@@ -56,14 +66,15 @@ export const updateQuestionSchema = z
     (data) => {
       // Se ambos estão presentes, valida índice
       if (data.answer !== undefined && data.options !== undefined) {
+        if (Array.isArray(data.answer)) {
+          return data.answer.every((idx) => idx >= 0 && idx < data.options.length);
+        }
         return data.answer >= 0 && data.answer < data.options.length;
       }
-      // Se só answer veio sem options, não temos como validar aqui —
-      // a checagem final contra o doc existente é feita no controller
       return true;
     },
     {
-      message: 'answer deve ser um índice válido dentro de options',
+      message: 'answer deve ser um índice ou lista de índices válidos dentro de options',
       path: ['answer'],
     }
   );
@@ -74,13 +85,20 @@ export const importPreviewItemSchema = z
     domainId: z.number().int().min(1).max(4),
     question: z.string().min(10).trim(),
     options: z.array(z.string().min(1)).min(2).max(10),
-    answer: z.number().int(),
+    answer: z.union([z.number().int(), z.array(z.number().int()).min(1)]),
+    multiSelect: z.boolean().optional(),
+    requiredSelections: z.number().int().optional(),
     explanation: z.string().trim().default(''),
   })
   .refine(
-    (data) => data.answer >= 0 && data.answer < data.options.length,
+    (data) => {
+      if (Array.isArray(data.answer)) {
+        return data.answer.every((idx) => idx >= 0 && idx < data.options.length);
+      }
+      return data.answer >= 0 && data.answer < data.options.length;
+    },
     {
-      message: 'answer deve ser um índice válido dentro de options',
+      message: 'answer deve ser um índice ou lista de índices válidos dentro de options',
       path: ['answer'],
     }
   );

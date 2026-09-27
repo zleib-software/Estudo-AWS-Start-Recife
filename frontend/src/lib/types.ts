@@ -5,7 +5,9 @@ export interface Question {
   domainId: number;
   question: string;
   options: string[];
-  answer: number;
+  answer: number | number[];
+  multiSelect?: boolean;
+  requiredSelections?: number;
   explanation: string;
   source?: string;
   active?: boolean;
@@ -52,7 +54,7 @@ export interface QuizState {
   mode: 'practice' | 'exam';
   questions: Question[];
   currentIndex: number;
-  userAnswers: Record<number, number>;
+  userAnswers: Record<number, number | number[]>;
   flagged: Record<number, boolean>;
   examTimeLeft: number;
   timestamp?: number;
